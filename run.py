@@ -107,6 +107,7 @@ def main():
         if name=='verify':p.add_argument('--all',action='store_true')
         if name=='generate':
             p.add_argument('--text',required=True)
+            p.add_argument('--language',default='es',help='Chatterbox language code, for example es or en')
             p.add_argument('--ref-audio',required=True,type=Path)
             p.add_argument('--output',required=True,type=Path)
             p.add_argument('--seed',default=42,type=int)
@@ -137,7 +138,7 @@ def main():
             mx.reset_peak_memory()
             parts=[]
             start=time.perf_counter()
-            for result in model.generate(text=args.text,lang_code='es',ref_audio=str(args.ref_audio.resolve()),temperature=.8,exaggeration=.5,cfg_weight=.5,repetition_penalty=1.2,min_p=.05,top_p=1.,max_new_tokens=1200,stream=False):
+            for result in model.generate(text=args.text,lang_code=args.language,ref_audio=str(args.ref_audio.resolve()),temperature=.8,exaggeration=.5,cfg_weight=.5,repetition_penalty=1.2,min_p=.05,top_p=1.,max_new_tokens=1200,stream=False):
                 mx.eval(result.audio)
                 parts.append(np.asarray(result.audio,dtype=np.float32).reshape(-1))
             if not parts:raise ValueError('No audio produced')
@@ -148,7 +149,7 @@ def main():
                 raise ValueError(f'Invalid or saturated decoder audio: {saturation:.4%} at hard limit')
             args.output.parent.mkdir(parents=True,exist_ok=True)
             sf.write(args.output,audio,model.sample_rate,subtype='FLOAT')
-            report.update(audio_generated=True,output=str(args.output),sample_rate=model.sample_rate,audio_seconds=len(audio)/model.sample_rate,generation_seconds=elapsed,rtf=elapsed/(len(audio)/model.sample_rate),decoder_limit_fraction=saturation,peak_mlx_memory_bytes=mx.get_peak_memory(),audio_sha256=digest(args.output),human_listening_assessed=False)
+            report.update(audio_generated=True,language=args.language,output=str(args.output),sample_rate=model.sample_rate,audio_seconds=len(audio)/model.sample_rate,generation_seconds=elapsed,rtf=elapsed/(len(audio)/model.sample_rate),decoder_limit_fraction=saturation,peak_mlx_memory_bytes=mx.get_peak_memory(),audio_sha256=digest(args.output),human_listening_assessed=False)
     report['status']='PASS'
     if args.report:
         args.report.parent.mkdir(parents=True,exist_ok=True)

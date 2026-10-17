@@ -21,7 +21,7 @@ applies the verified final-vocoder activation correction and loads mixed
 per-layer quantization correctly.
 
 - Public model weights: https://huggingface.co/groxaxo/Chatterbox-LatAm-MLX
-- Private code and reports: https://github.com/groxaxo/chatterbox-latam-mlx-private
+- Public runner and reports: https://github.com/groxaxo/chatterbox-latam-mlx-private
 
 ## Results actually measured
 
@@ -88,9 +88,15 @@ Supply an authorized clean mono reference recording:
 
 Choose `oQ8`, `FP16T3`, `FP32`, `oQ6`, or `oQ5`. Generation is local and uses
 only the included speech tokenizer. Existing outputs are not overwritten.
+Spanish is the default; use `--language en` for English or another supported
+Chatterbox language code when appropriate.
 The runner rejects nonfinite or hard-limited output. The package contains no
 original voice-reference recording or generated voice-waveform corpus; hashes,
 settings, metrics and transcripts preserve the benchmark audit trail.
+
+To use the corrected runner with Codex, Claude Code or OpenCode's Talk skill,
+see [Talk integration](docs/talk-integration.md). The included adapter uses Q8
+by default and performs synthesis locally with the saturation guard enabled.
 
 To fetch every variant into a GitHub clone:
 
