@@ -13,14 +13,14 @@ tags:
 - mixed-precision
 ---
 
-# Chatterbox LatAm — private tested MLX bundle
+# Chatterbox LatAm — tested MLX bundle
 
 Portable native Apple Silicon package containing the retained FP32 baseline,
 FP16 T3 / FP32 decoder candidate, and local oMLX Q8/Q6/Q5 T3 variants. The runner
 applies the verified final-vocoder activation correction and loads mixed
 per-layer quantization correctly.
 
-- Private model assets: https://huggingface.co/groxaxo/Chatterbox-LatAm-MLX-Private
+- Public model weights: https://huggingface.co/groxaxo/Chatterbox-LatAm-MLX
 - Private code and reports: https://github.com/groxaxo/chatterbox-latam-mlx-private
 
 ## Results actually measured
@@ -64,11 +64,10 @@ bash ./Install-and-Test-Mac.command
 ```
 
 The installer creates `.venv` inside this checkout and installs the pinned
-runtime. From a GitHub clone, it fetches Q8 and the tokenizer if absent, using
-your existing Hugging Face authentication. The initial Q8/tokenizer weights are
-about 1.76 GB. Access to the private model repository is required; sign in with
-`hf auth login` when needed. A full model-bundle download contains all five
-variants and the pinned tokenizer, about 8.33 GB of weights.
+runtime. From a GitHub clone, it fetches Q8 and the tokenizer if absent from
+the public Hugging Face repository; no login is required. The initial
+Q8/tokenizer weights are about 1.76 GB. A full model-bundle download contains
+all five variants and the pinned tokenizer, about 8.33 GB of weights.
 
 The install check verifies checksums and a finite native Metal transformer
 forward. Generate a real speech sample separately; an unconditioned forward is

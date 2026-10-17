@@ -5,7 +5,7 @@ Model weights derive from ResembleAI/Chatterbox-Multilingual-es-mx-latam at
 assets at 5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18. The original Resemble AI
 MIT license is retained verbatim in LICENSE.
 
-The private package includes mlx-community/S3TokenizerV2 weights and config at
+The package includes mlx-community/S3TokenizerV2 weights and config at
 e0c9886f0e1c35ae85b1f27277416fb19fc72bec. Their exact upstream file hashes are
 recorded in speech_tokenizer.lock.json. These files were dependencies of the
 tested local runtime; the original public Q8 release did not redistribute them.
