@@ -1,0 +1,1489 @@
+{
+  "level": 5,
+  "quantizer": "Installed oMLX _get_predicate_bits and _quantize_chunked",
+  "omlx_commit": "70f44cfd652d2013dc0f9776dca7518e32101b00",
+  "source_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+  "weights_sha256": "bea499ebc253ce9cc56a17d8f8bded6f9531bcf128ce333b80420fdb5ce3f78e",
+  "weight_bytes": 1079972255,
+  "quantized_matrices": 210,
+  "matrix_bit_counts": {
+    "6": 14,
+    "5": 196
+  },
+  "non_backbone_tensors_exactly_preserved": true,
+  "serialization_exact": true,
+  "activation_calibration": false,
+  "policy": "oMLX structural mixed-precision policy on 210 T3 backbone matrices; every other tensor preserved at source precision",
+  "matrices": [
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021949291229248047
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044146131724119186
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415284842252731
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04677531123161316
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04575376212596893
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04382128268480301
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.02201019786298275
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021823713555932045
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04414793848991394
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044217828661203384
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.045825663954019547
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04470695182681084
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04432877525687218
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021988797932863235
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044248923659324646
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04421810060739517
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04418570548295975
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044360700994729996
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043990038335323334
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044158101081848145
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044755712151527405
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04423549026250839
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420849680900574
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044204890727996826
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044360075145959854
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04403429850935936
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04419451206922531
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0446866899728775
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04413245990872383
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044269077479839325
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04423608258366585
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04471771791577339
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04401209205389023
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044118817895650864
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044502828270196915
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044206514954566956
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044161297380924225
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04421372339129448
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04453839361667633
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04397445172071457
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04410320147871971
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044568341225385666
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417772963643074
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044234175235033035
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044188667088747025
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04456670209765434
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04409676417708397
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043973542749881744
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044523779302835464
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04413482919335365
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044146578758955
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04422171786427498
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04418522119522095
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04402918368577957
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04402909800410271
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04441970959305763
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417024925351143
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04418833181262016
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420710727572441
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04419385641813278
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0440155528485775
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04386642575263977
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04449533671140671
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415430873632431
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044218841940164566
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04424355924129486
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04418475553393364
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043943677097558975
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04388926923274994
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04440321400761604
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04411459341645241
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04416544362902641
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04423350840806961
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04410843923687935
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0440690778195858
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04388454928994179
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0444093719124794
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417409375309944
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417319595813751
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044171471148729324
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04411356523633003
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04398224502801895
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04391263797879219
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04435304179787636
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.02187701314687729
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0442151315510273
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04423869028687477
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04602692276239395
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04412200301885605
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.045989640057086945
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.02196577750146389
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044144101440906525
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044157955795526505
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04414515942335129
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04405219107866287
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04399046301841736
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04385589808225632
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04423448443412781
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04416297376155853
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04416283592581749
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044177595525979996
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044116850942373276
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04401509091258049
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04389859363436699
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04445650801062584
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044159989804029465
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417821392416954
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044228680431842804
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04404798895120621
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04397561028599739
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04393014684319496
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0446125753223896
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415871948003769
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044152241200208664
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044290464371442795
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04413268715143204
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04394722729921341
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04393475502729416
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0446188785135746
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417770355939865
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04424453526735306
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04433024674654007
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04416123405098915
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04401160031557083
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043884068727493286
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04473602771759033
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044232528656721115
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04419801011681557
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044214554131031036
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04419565573334694
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04395563527941704
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04390735924243927
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04475034400820732
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021760722622275352
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044210437685251236
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044192176312208176
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04422518238425255
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04390314966440201
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04394666105508804
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.02199855074286461
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021764984354376793
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04421219974756241
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044213760644197464
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04404915124177933
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04407690092921257
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04409867897629738
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0220633614808321
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021784909069538116
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04424257203936577
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044249795377254486
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04444386065006256
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04406147822737694
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044033318758010864
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.021985435858368874
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.down_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.022288285195827484
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420628026127815
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04439237341284752
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044152844697237015
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044099364429712296
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417819902300835
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.v_proj.weight",
+      "bits": 6,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.02202281355857849
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04467146471142769
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415709897875786
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044210851192474365
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04579032585024834
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044345974922180176
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04437331482768059
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04453396052122116
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420509561896324
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415339604020119
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04422448202967644
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044402558356523514
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043976496905088425
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044162433594465256
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04452160745859146
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044249776750802994
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0442582368850708
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04428774490952492
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044095464050769806
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04390955716371536
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044326215982437134
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04446423053741455
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04415936395525932
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04426499083638191
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04421023279428482
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04446551948785782
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.043959472328424454
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044057201594114304
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044604670256376266
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417974501848221
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420806095004082
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.044207945466041565
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04414619505405426
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04393836855888367
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0441521592438221
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04473557323217392
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.0440852977335453
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417019337415695
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417391121387482
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04454713687300682
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04389958828687668
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04407752677798271
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04463798180222511
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.down_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04414161667227745
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.gate_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417363926768303
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.up_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04417579993605614
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.k_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04452619329094887
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.o_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04399315267801285
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.q_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04420414939522743
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.v_proj.weight",
+      "bits": 5,
+      "group_size": 64,
+      "mode": "affine",
+      "relative_weight_rmse": 0.04457998275756836
+    }
+  ]
+}

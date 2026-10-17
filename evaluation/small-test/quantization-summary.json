@@ -1,0 +1,51 @@
+[
+  {
+    "level": 8,
+    "quantizer": "Installed oMLX _get_predicate_bits and _quantize_chunked",
+    "omlx_commit": "70f44cfd652d2013dc0f9776dca7518e32101b00",
+    "source_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+    "weights_sha256": "5731ee775d31c61802eae6d72feec1131344653272d538f41ff5f1a158997c7b",
+    "weight_bytes": 1264128643,
+    "quantized_matrices": 210,
+    "matrix_bit_counts": {
+      "8": 210
+    },
+    "non_backbone_tensors_exactly_preserved": true,
+    "serialization_exact": true,
+    "activation_calibration": false,
+    "policy": "oMLX structural mixed-precision policy on 210 T3 backbone matrices; every other tensor preserved at source precision"
+  },
+  {
+    "level": 6,
+    "quantizer": "Installed oMLX _get_predicate_bits and _quantize_chunked",
+    "omlx_commit": "70f44cfd652d2013dc0f9776dca7518e32101b00",
+    "source_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+    "weights_sha256": "85ebe09693d7faf89bfd3437a2fbf4cd6ebebff30fcb65f6b977d88f36a7eb69",
+    "weight_bytes": 1138299337,
+    "quantized_matrices": 210,
+    "matrix_bit_counts": {
+      "6": 210
+    },
+    "non_backbone_tensors_exactly_preserved": true,
+    "serialization_exact": true,
+    "activation_calibration": false,
+    "policy": "oMLX structural mixed-precision policy on 210 T3 backbone matrices; every other tensor preserved at source precision"
+  },
+  {
+    "level": 5,
+    "quantizer": "Installed oMLX _get_predicate_bits and _quantize_chunked",
+    "omlx_commit": "70f44cfd652d2013dc0f9776dca7518e32101b00",
+    "source_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+    "weights_sha256": "bea499ebc253ce9cc56a17d8f8bded6f9531bcf128ce333b80420fdb5ce3f78e",
+    "weight_bytes": 1079972255,
+    "quantized_matrices": 210,
+    "matrix_bit_counts": {
+      "6": 14,
+      "5": 196
+    },
+    "non_backbone_tensors_exactly_preserved": true,
+    "serialization_exact": true,
+    "activation_calibration": false,
+    "policy": "oMLX structural mixed-precision policy on 210 T3 backbone matrices; every other tensor preserved at source precision"
+  }
+]

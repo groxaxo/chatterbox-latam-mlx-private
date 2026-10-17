@@ -1,0 +1,12 @@
+{
+  "variant": "oQ8",
+  "load_seconds": 0.5491574170009699,
+  "model_sha256": "5731ee775d31c61802eae6d72feec1131344653272d538f41ff5f1a158997c7b",
+  "weight_bytes": 1264128643,
+  "loaded_t3_dtypes": {
+    "mlx.core.float32": 503,
+    "mlx.core.uint32": 210
+  },
+  "decoder_all_fp32": true,
+  "reference_seconds": 10.296
+}

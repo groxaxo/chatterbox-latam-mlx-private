@@ -1,0 +1,127 @@
+{
+  "model": "Systran/faster-whisper-small@536b0662742c02347bc0e980a01041f333bce120",
+  "normalization": "Unicode NFC, casefold, punctuation removed; accents retained",
+  "limits": "Recognizer errors are included; small corpus, one seed, no human pronunciation or speaker-similarity rating",
+  "clips": [
+    {
+      "variant": "FP32",
+      "case": "01-accents",
+      "reference": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?",
+      "transcript": "Hola hablar, el niño vio un pingüino y sonrió. ¿Cómo estás?",
+      "word_errors": 1,
+      "reference_words": 11,
+      "wer": 0.09090909090909091,
+      "seconds": 1.5576055840065237
+    },
+    {
+      "variant": "FP32",
+      "case": "02-latam",
+      "reference": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "transcript": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "word_errors": 0,
+      "reference_words": 19,
+      "wer": 0.0,
+      "seconds": 1.8212487089913338
+    },
+    {
+      "variant": "FP32",
+      "case": "03-longer",
+      "reference": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "transcript": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "word_errors": 0,
+      "reference_words": 27,
+      "wer": 0.0,
+      "seconds": 1.8381978329853155
+    },
+    {
+      "variant": "oQ8",
+      "case": "01-accents",
+      "reference": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?",
+      "transcript": "Hola Ablar, el niño ve un pingüino en sonrío. ¿Cómo estás?",
+      "word_errors": 4,
+      "reference_words": 11,
+      "wer": 0.36363636363636365,
+      "seconds": 1.2558569999819156
+    },
+    {
+      "variant": "oQ8",
+      "case": "02-latam",
+      "reference": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "transcript": "¡Qué onda! Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "word_errors": 0,
+      "reference_words": 19,
+      "wer": 0.0,
+      "seconds": 1.2919585830240976
+    },
+    {
+      "variant": "oQ8",
+      "case": "03-longer",
+      "reference": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "transcript": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "word_errors": 0,
+      "reference_words": 27,
+      "wer": 0.0,
+      "seconds": 1.5366219590068795
+    },
+    {
+      "variant": "oQ6",
+      "case": "01-accents",
+      "reference": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?",
+      "transcript": "Hola, Vlad, el niño de un pingüino es sonrion, ¿cómo estás?",
+      "word_errors": 3,
+      "reference_words": 11,
+      "wer": 0.2727272727272727,
+      "seconds": 1.1218222500174306
+    },
+    {
+      "variant": "oQ6",
+      "case": "02-latam",
+      "reference": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "transcript": "¿Qué onda? Hoy hace un clima padrísimo, vamos por unos tacos y un agua de horchata después del trabajo.",
+      "word_errors": 0,
+      "reference_words": 19,
+      "wer": 0.0,
+      "seconds": 1.2686387079884298
+    },
+    {
+      "variant": "oQ6",
+      "case": "03-longer",
+      "reference": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "transcript": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "word_errors": 0,
+      "reference_words": 27,
+      "wer": 0.0,
+      "seconds": 1.5512115829915274
+    },
+    {
+      "variant": "oQ5",
+      "case": "01-accents",
+      "reference": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?",
+      "transcript": "o la blad, el niño vio un pingüino y sonrió como estás.",
+      "word_errors": 4,
+      "reference_words": 11,
+      "wer": 0.36363636363636365,
+      "seconds": 1.1206262500199955
+    },
+    {
+      "variant": "oQ5",
+      "case": "02-latam",
+      "reference": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo.",
+      "transcript": "¿Qué onda? Hoy hace un clima padrísimo, vamos por unos tacos y un agua de horchata después del trabajo.",
+      "word_errors": 0,
+      "reference_words": 19,
+      "wer": 0.0,
+      "seconds": 1.2835217080137227
+    },
+    {
+      "variant": "oQ5",
+      "case": "03-longer",
+      "reference": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "transcript": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues.",
+      "word_errors": 0,
+      "reference_words": 27,
+      "wer": 0.0,
+      "seconds": 1.5538372080191039
+    }
+  ]
+}

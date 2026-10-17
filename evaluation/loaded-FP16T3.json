@@ -1,0 +1,12 @@
+{
+  "variant": "FP16T3",
+  "load_seconds": 0.5734196669945959,
+  "model_sha256": "e96620aa846ecfa8f3ecdd3ed3f0a41db358d137115110b05a2e7bdf1326c725",
+  "weight_bytes": 1639136135,
+  "loaded_t3_dtypes": {
+    "mlx.core.float16": 292,
+    "mlx.core.float32": 1
+  },
+  "decoder_all_fp32": true,
+  "reference_seconds": 10.296
+}

@@ -1,0 +1,4010 @@
+{
+  "policy": {
+    "bits": 8,
+    "group_size": 64,
+    "mode": "affine",
+    "scope": "All 210 T3 transformer attention/MLP linear matrices",
+    "hq_boundary_exemptions": false,
+    "error_gates": false,
+    "activation_quantization": false,
+    "kv_cache_quantization": false,
+    "global_dtype_cast": false
+  },
+  "quantized_matrices": 210,
+  "unquantized_backbone_linear_matrices": 0,
+  "all_other_tensors_exactly_unchanged": true,
+  "upstream_direct_quantization_equality": true,
+  "matrices": [
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005420054770656001,
+        "worst_row_relative_rmse": 0.007187629972795071,
+        "p99_row_relative_rmse": 0.005789060784103758,
+        "rmse": 9.178164045593069e-05,
+        "max_absolute_error": 0.0015141069889068604
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005367983860799306,
+        "worst_row_relative_rmse": 0.0067759473551246745,
+        "p99_row_relative_rmse": 0.005801973037677802,
+        "rmse": 9.605056329311406e-05,
+        "max_absolute_error": 0.0010599493980407715
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005366040069804358,
+        "worst_row_relative_rmse": 0.00612509205820815,
+        "p99_row_relative_rmse": 0.0057545393551679085,
+        "rmse": 9.141704983268687e-05,
+        "max_absolute_error": 0.0005971118807792664
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005686675179940507,
+        "worst_row_relative_rmse": 0.007572759103720282,
+        "p99_row_relative_rmse": 0.007109735026065161,
+        "rmse": 0.00023055981508609579,
+        "max_absolute_error": 0.001802012324333191
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005554605289176195,
+        "worst_row_relative_rmse": 0.007214749599960627,
+        "p99_row_relative_rmse": 0.006502238970652504,
+        "rmse": 6.940647904799422e-05,
+        "max_absolute_error": 0.0014626085758209229
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005327185620238584,
+        "worst_row_relative_rmse": 0.007361547643551916,
+        "p99_row_relative_rmse": 0.006789877292076738,
+        "rmse": 0.00019325899545561827,
+        "max_absolute_error": 0.001262858510017395
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.0.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005442551989044887,
+        "worst_row_relative_rmse": 0.006156064638219998,
+        "p99_row_relative_rmse": 0.005874799994575406,
+        "rmse": 7.09448770426716e-05,
+        "max_absolute_error": 0.0003820769488811493
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053910068914647885,
+        "worst_row_relative_rmse": 0.006882491028455143,
+        "p99_row_relative_rmse": 0.005630859367073636,
+        "rmse": 9.369081297391111e-05,
+        "max_absolute_error": 0.0014293193817138672
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005366120162527249,
+        "worst_row_relative_rmse": 0.006747142946136037,
+        "p99_row_relative_rmse": 0.0057570550470972095,
+        "rmse": 9.620654050915857e-05,
+        "max_absolute_error": 0.0007157549262046814
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373800176305948,
+        "worst_row_relative_rmse": 0.006318141774041876,
+        "p99_row_relative_rmse": 0.00579439647031669,
+        "rmse": 9.36717420718736e-05,
+        "max_absolute_error": 0.0005836412310600281
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005569613869269744,
+        "worst_row_relative_rmse": 0.007437940427926321,
+        "p99_row_relative_rmse": 0.006784441744524682,
+        "rmse": 0.00016197289017224866,
+        "max_absolute_error": 0.0010733939707279205
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005433831202055524,
+        "worst_row_relative_rmse": 0.006235579579495641,
+        "p99_row_relative_rmse": 0.005881579863221295,
+        "rmse": 6.866789620551933e-05,
+        "max_absolute_error": 0.0006291419267654419
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537814022565083,
+        "worst_row_relative_rmse": 0.007095744961501965,
+        "p99_row_relative_rmse": 0.0063517538930977,
+        "rmse": 0.00017473784546776031,
+        "max_absolute_error": 0.0017421692609786987
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.1.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005433120719124454,
+        "worst_row_relative_rmse": 0.005978337093405021,
+        "p99_row_relative_rmse": 0.005821463276194981,
+        "rmse": 7.275622997920157e-05,
+        "max_absolute_error": 0.0003711581230163574
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005377465078718145,
+        "worst_row_relative_rmse": 0.007147817481251097,
+        "p99_row_relative_rmse": 0.005657456338522506,
+        "rmse": 9.82867709429534e-05,
+        "max_absolute_error": 0.0006786361336708069
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005377942098870024,
+        "worst_row_relative_rmse": 0.006284361584835634,
+        "p99_row_relative_rmse": 0.005773358354390021,
+        "rmse": 0.00010175901659039418,
+        "max_absolute_error": 0.0008987486362457275
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373659070318352,
+        "worst_row_relative_rmse": 0.006609241137446439,
+        "p99_row_relative_rmse": 0.005803487027611126,
+        "rmse": 9.79312852698988e-05,
+        "max_absolute_error": 0.0004833601415157318
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005391143230951955,
+        "worst_row_relative_rmse": 0.00671776185435186,
+        "p99_row_relative_rmse": 0.00613471875130322,
+        "rmse": 0.0001551121718274654,
+        "max_absolute_error": 0.0014229267835617065
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005346824090659233,
+        "worst_row_relative_rmse": 0.005899861451311816,
+        "p99_row_relative_rmse": 0.005749833405271615,
+        "rmse": 8.446357025449463e-05,
+        "max_absolute_error": 0.0006028264760971069
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005367657324306503,
+        "worst_row_relative_rmse": 0.006218089021916581,
+        "p99_row_relative_rmse": 0.0059220896959963605,
+        "rmse": 0.00015457677799959193,
+        "max_absolute_error": 0.0009487047791481018
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.10.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00544453076253292,
+        "worst_row_relative_rmse": 0.006229045928128556,
+        "p99_row_relative_rmse": 0.0058847213707631935,
+        "rmse": 8.695454664963331e-05,
+        "max_absolute_error": 0.0004508607089519501
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053799131366161525,
+        "worst_row_relative_rmse": 0.006929589182373269,
+        "p99_row_relative_rmse": 0.005645676878028953,
+        "rmse": 9.873674180020766e-05,
+        "max_absolute_error": 0.0008341744542121887
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005372859508269393,
+        "worst_row_relative_rmse": 0.007647315381169437,
+        "p99_row_relative_rmse": 0.005829024144831886,
+        "rmse": 0.00010204863247855554,
+        "max_absolute_error": 0.000804441049695015
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373441918343291,
+        "worst_row_relative_rmse": 0.0066615629544386325,
+        "p99_row_relative_rmse": 0.005776951808821802,
+        "rmse": 9.872486950058245e-05,
+        "max_absolute_error": 0.000567995011806488
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005388055445987541,
+        "worst_row_relative_rmse": 0.006373829136382568,
+        "p99_row_relative_rmse": 0.005998040521176528,
+        "rmse": 0.0001591460868696748,
+        "max_absolute_error": 0.0011098682880401611
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005350847766993966,
+        "worst_row_relative_rmse": 0.005878289335788431,
+        "p99_row_relative_rmse": 0.00575712445778135,
+        "rmse": 8.666760652787583e-05,
+        "max_absolute_error": 0.0005259709432721138
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053701373667794,
+        "worst_row_relative_rmse": 0.006412750175862092,
+        "p99_row_relative_rmse": 0.005952138838388386,
+        "rmse": 0.00015454303397629908,
+        "max_absolute_error": 0.0010355263948440552
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.11.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005433868645198345,
+        "worst_row_relative_rmse": 0.006143608133362605,
+        "p99_row_relative_rmse": 0.005854983035374578,
+        "rmse": 8.88183557106789e-05,
+        "max_absolute_error": 0.0004402771592140198
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005365020144118134,
+        "worst_row_relative_rmse": 0.006511763627903727,
+        "p99_row_relative_rmse": 0.0055942938137332615,
+        "rmse": 9.832510341300204e-05,
+        "max_absolute_error": 0.0006204023957252502
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537826697786624,
+        "worst_row_relative_rmse": 0.007325312415474134,
+        "p99_row_relative_rmse": 0.005780498481683343,
+        "rmse": 0.0001022120274117543,
+        "max_absolute_error": 0.0013065505772829056
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005377623936945985,
+        "worst_row_relative_rmse": 0.0079962791147439,
+        "p99_row_relative_rmse": 0.005782483367639805,
+        "rmse": 9.845118843410173e-05,
+        "max_absolute_error": 0.0005931183695793152
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005436545500603952,
+        "worst_row_relative_rmse": 0.008917492060808609,
+        "p99_row_relative_rmse": 0.006189227562569525,
+        "rmse": 0.00015056224898515105,
+        "max_absolute_error": 0.0017146840691566467
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005351093544428549,
+        "worst_row_relative_rmse": 0.006010302026122955,
+        "p99_row_relative_rmse": 0.005701552737971352,
+        "rmse": 8.695369714878056e-05,
+        "max_absolute_error": 0.000649474561214447
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053596789945828715,
+        "worst_row_relative_rmse": 0.006243490516475737,
+        "p99_row_relative_rmse": 0.00594600151539333,
+        "rmse": 0.00015170490199470002,
+        "max_absolute_error": 0.0012483149766921997
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.12.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005407813773931919,
+        "worst_row_relative_rmse": 0.005964402554897586,
+        "p99_row_relative_rmse": 0.00578128546805776,
+        "rmse": 8.771924424599789e-05,
+        "max_absolute_error": 0.0004898160696029663
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005372753321763791,
+        "worst_row_relative_rmse": 0.005987120219791507,
+        "p99_row_relative_rmse": 0.005589809395297091,
+        "rmse": 9.89902886702331e-05,
+        "max_absolute_error": 0.0007397830486297607
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369444542333591,
+        "worst_row_relative_rmse": 0.006675978345027271,
+        "p99_row_relative_rmse": 0.005763339243444157,
+        "rmse": 0.0001023600514966688,
+        "max_absolute_error": 0.0011764420196413994
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053757868661041715,
+        "worst_row_relative_rmse": 0.007007582489044465,
+        "p99_row_relative_rmse": 0.0057904132977272624,
+        "rmse": 9.874704401196095e-05,
+        "max_absolute_error": 0.0006984621286392212
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005415399640579525,
+        "worst_row_relative_rmse": 0.006457956324734948,
+        "p99_row_relative_rmse": 0.006100856663556513,
+        "rmse": 0.00015285869367375954,
+        "max_absolute_error": 0.0010654181241989136
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005348225909411554,
+        "worst_row_relative_rmse": 0.0058556759630919416,
+        "p99_row_relative_rmse": 0.005730569629232681,
+        "rmse": 8.745489399471183e-05,
+        "max_absolute_error": 0.0005978792905807495
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005355732931332294,
+        "worst_row_relative_rmse": 0.006067269223140859,
+        "p99_row_relative_rmse": 0.005896699883305148,
+        "rmse": 0.00015780303644560948,
+        "max_absolute_error": 0.0013827532529830933
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.13.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005416968588841488,
+        "worst_row_relative_rmse": 0.006007413748020822,
+        "p99_row_relative_rmse": 0.005829395392239571,
+        "rmse": 8.895710428068512e-05,
+        "max_absolute_error": 0.00047528743743896484
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368789203839369,
+        "worst_row_relative_rmse": 0.00629086525575083,
+        "p99_row_relative_rmse": 0.005625694086112691,
+        "rmse": 9.862570700298639e-05,
+        "max_absolute_error": 0.00064849853515625
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376592656358648,
+        "worst_row_relative_rmse": 0.0074678224714908575,
+        "p99_row_relative_rmse": 0.005752011113210008,
+        "rmse": 0.00010273160993757656,
+        "max_absolute_error": 0.0011150091886520386
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053721808317518166,
+        "worst_row_relative_rmse": 0.007821824767806252,
+        "p99_row_relative_rmse": 0.005765526441611645,
+        "rmse": 9.844445628641002e-05,
+        "max_absolute_error": 0.000548419076949358
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0054157959584298036,
+        "worst_row_relative_rmse": 0.006854967673389958,
+        "p99_row_relative_rmse": 0.006046667890694443,
+        "rmse": 0.00015715724257625468,
+        "max_absolute_error": 0.0009885132312774658
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005351596637254798,
+        "worst_row_relative_rmse": 0.005853673650584886,
+        "p99_row_relative_rmse": 0.005732569204331167,
+        "rmse": 8.633740457719748e-05,
+        "max_absolute_error": 0.0008497461676597595
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005349124433329012,
+        "worst_row_relative_rmse": 0.005965657637178807,
+        "p99_row_relative_rmse": 0.00575713689052224,
+        "rmse": 0.00016100845496057987,
+        "max_absolute_error": 0.0013991892337799072
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.14.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005412237011729259,
+        "worst_row_relative_rmse": 0.0059503934523625086,
+        "p99_row_relative_rmse": 0.005805161303360826,
+        "rmse": 8.763304488083664e-05,
+        "max_absolute_error": 0.0004033409059047699
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005365365570348908,
+        "worst_row_relative_rmse": 0.006448045519745851,
+        "p99_row_relative_rmse": 0.005595722182657856,
+        "rmse": 9.839688454404506e-05,
+        "max_absolute_error": 0.0005477964878082275
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368204100247724,
+        "worst_row_relative_rmse": 0.006905633546077467,
+        "p99_row_relative_rmse": 0.005763425273362831,
+        "rmse": 0.00010352828354039939,
+        "max_absolute_error": 0.0009429901838302612
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005375280938728331,
+        "worst_row_relative_rmse": 0.008868180239254193,
+        "p99_row_relative_rmse": 0.005778262239064142,
+        "rmse": 9.822095802305321e-05,
+        "max_absolute_error": 0.000741992611438036
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376033788727074,
+        "worst_row_relative_rmse": 0.007400273088717028,
+        "p99_row_relative_rmse": 0.005905601720744871,
+        "rmse": 0.00016528296091567442,
+        "max_absolute_error": 0.0011714398860931396
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005347264042365823,
+        "worst_row_relative_rmse": 0.005845251531777889,
+        "p99_row_relative_rmse": 0.005724884827606261,
+        "rmse": 9.01455656715833e-05,
+        "max_absolute_error": 0.0007079318165779114
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005349916149792902,
+        "worst_row_relative_rmse": 0.00603811954037445,
+        "p99_row_relative_rmse": 0.0057607888112426444,
+        "rmse": 0.00016224473596160107,
+        "max_absolute_error": 0.001459553837776184
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.15.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005401353252930067,
+        "worst_row_relative_rmse": 0.005911211625755285,
+        "p99_row_relative_rmse": 0.005771098850485133,
+        "rmse": 9.045178228430655e-05,
+        "max_absolute_error": 0.0004453510046005249
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005367325480290412,
+        "worst_row_relative_rmse": 0.0062138497250829525,
+        "p99_row_relative_rmse": 0.005606259229355795,
+        "rmse": 9.877649998038498e-05,
+        "max_absolute_error": 0.0006287246942520142
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373688456897031,
+        "worst_row_relative_rmse": 0.006992902295173562,
+        "p99_row_relative_rmse": 0.005756098733614458,
+        "rmse": 0.00010388087530398283,
+        "max_absolute_error": 0.0011177510023117065
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005374342227132119,
+        "worst_row_relative_rmse": 0.007894185617738166,
+        "p99_row_relative_rmse": 0.005778067512297507,
+        "rmse": 9.852474670871313e-05,
+        "max_absolute_error": 0.000629723072052002
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005371466534384546,
+        "worst_row_relative_rmse": 0.006525939166533828,
+        "p99_row_relative_rmse": 0.005936867591189248,
+        "rmse": 0.0001599796235543968,
+        "max_absolute_error": 0.0010587871074676514
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053529784476914356,
+        "worst_row_relative_rmse": 0.005989604643647695,
+        "p99_row_relative_rmse": 0.005735197284772337,
+        "rmse": 9.01701107598903e-05,
+        "max_absolute_error": 0.0008856505155563354
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005333090364599725,
+        "worst_row_relative_rmse": 0.0059147899141401995,
+        "p99_row_relative_rmse": 0.005744802000935127,
+        "rmse": 0.00015625780515354912,
+        "max_absolute_error": 0.0008881911635398865
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.16.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005407814276456865,
+        "worst_row_relative_rmse": 0.006078928551418688,
+        "p99_row_relative_rmse": 0.005823863229494176,
+        "rmse": 9.0637064047871e-05,
+        "max_absolute_error": 0.0004175044596195221
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005367657564274434,
+        "worst_row_relative_rmse": 0.00670184522693141,
+        "p99_row_relative_rmse": 0.005614141479329334,
+        "rmse": 9.922083813024301e-05,
+        "max_absolute_error": 0.0006565749645233154
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005372270046121074,
+        "worst_row_relative_rmse": 0.0088341544970993,
+        "p99_row_relative_rmse": 0.005777951222853396,
+        "rmse": 0.00010417406301517983,
+        "max_absolute_error": 0.0009615030139684677
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376675739747339,
+        "worst_row_relative_rmse": 0.008407938564654329,
+        "p99_row_relative_rmse": 0.005788751067893274,
+        "rmse": 9.903395458836392e-05,
+        "max_absolute_error": 0.0007462864741683006
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005364914723219787,
+        "worst_row_relative_rmse": 0.006352580739851599,
+        "p99_row_relative_rmse": 0.005873251905274801,
+        "rmse": 0.00016043615011851792,
+        "max_absolute_error": 0.0009758323431015015
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005341106130786531,
+        "worst_row_relative_rmse": 0.0058551152314201904,
+        "p99_row_relative_rmse": 0.005711137325759609,
+        "rmse": 9.291634294819403e-05,
+        "max_absolute_error": 0.0007123500108718872
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00533321617321004,
+        "worst_row_relative_rmse": 0.005971479059069278,
+        "p99_row_relative_rmse": 0.005726415584739051,
+        "rmse": 0.0001567582068842368,
+        "max_absolute_error": 0.001103028655052185
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.17.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005400591180896849,
+        "worst_row_relative_rmse": 0.006004210427511141,
+        "p99_row_relative_rmse": 0.0058168758242785135,
+        "rmse": 9.362347749606883e-05,
+        "max_absolute_error": 0.0005133301019668579
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005362567637149732,
+        "worst_row_relative_rmse": 0.005761790891307158,
+        "p99_row_relative_rmse": 0.005581499088044384,
+        "rmse": 9.942488505828954e-05,
+        "max_absolute_error": 0.0005278512835502625
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369309947198176,
+        "worst_row_relative_rmse": 0.006973600344519053,
+        "p99_row_relative_rmse": 0.005788997612639399,
+        "rmse": 0.00010484226153312584,
+        "max_absolute_error": 0.0008357763290405273
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005374567207539684,
+        "worst_row_relative_rmse": 0.00908796731312401,
+        "p99_row_relative_rmse": 0.0057676649224743465,
+        "rmse": 9.919829750157373e-05,
+        "max_absolute_error": 0.0008009355515241623
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005364754016989218,
+        "worst_row_relative_rmse": 0.00610538892402021,
+        "p99_row_relative_rmse": 0.005820653300928701,
+        "rmse": 0.00015993539140553655,
+        "max_absolute_error": 0.001251116394996643
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005350909389101058,
+        "worst_row_relative_rmse": 0.005943366762305099,
+        "p99_row_relative_rmse": 0.005745054311993486,
+        "rmse": 9.325631919433315e-05,
+        "max_absolute_error": 0.000613190233707428
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005330842697796735,
+        "worst_row_relative_rmse": 0.005857987618936612,
+        "p99_row_relative_rmse": 0.005743077929646484,
+        "rmse": 0.00015657957056681548,
+        "max_absolute_error": 0.0011876970529556274
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.18.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005398948668918748,
+        "worst_row_relative_rmse": 0.005980259208146403,
+        "p99_row_relative_rmse": 0.0058387415842503275,
+        "rmse": 9.367277200720215e-05,
+        "max_absolute_error": 0.00044705718755722046
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053702896232207965,
+        "worst_row_relative_rmse": 0.005827771452229422,
+        "p99_row_relative_rmse": 0.005596302118438468,
+        "rmse": 0.00010019089033614345,
+        "max_absolute_error": 0.0005772337317466736
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005371054527065554,
+        "worst_row_relative_rmse": 0.007477753280362568,
+        "p99_row_relative_rmse": 0.005777406703741529,
+        "rmse": 0.00010492015990073538,
+        "max_absolute_error": 0.00102146714925766
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369823433125869,
+        "worst_row_relative_rmse": 0.008166642223278708,
+        "p99_row_relative_rmse": 0.005751907178210829,
+        "rmse": 9.97337742464142e-05,
+        "max_absolute_error": 0.0005469974130392075
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005358455942453118,
+        "worst_row_relative_rmse": 0.006197776900644776,
+        "p99_row_relative_rmse": 0.005826057575948534,
+        "rmse": 0.0001587987374217039,
+        "max_absolute_error": 0.0013297051191329956
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005345370415321608,
+        "worst_row_relative_rmse": 0.0059438627902775,
+        "p99_row_relative_rmse": 0.005722886985737363,
+        "rmse": 9.27711816275558e-05,
+        "max_absolute_error": 0.0008153766393661499
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005337518147202805,
+        "worst_row_relative_rmse": 0.0058733013774233634,
+        "p99_row_relative_rmse": 0.005709675960603767,
+        "rmse": 0.00015525615635750005,
+        "max_absolute_error": 0.0009805411100387573
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.19.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053905239021063076,
+        "worst_row_relative_rmse": 0.006065709498938833,
+        "p99_row_relative_rmse": 0.0057816098369250744,
+        "rmse": 9.304538329506233e-05,
+        "max_absolute_error": 0.0004583187401294708
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005402618613131599,
+        "worst_row_relative_rmse": 0.008441699821543585,
+        "p99_row_relative_rmse": 0.005612191999701684,
+        "rmse": 9.480979646747465e-05,
+        "max_absolute_error": 0.0013988912105560303
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373799954825617,
+        "worst_row_relative_rmse": 0.006250577447558833,
+        "p99_row_relative_rmse": 0.005752435389202073,
+        "rmse": 9.720844717409475e-05,
+        "max_absolute_error": 0.0011173859238624573
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005379512899308999,
+        "worst_row_relative_rmse": 0.006301412883605954,
+        "p99_row_relative_rmse": 0.00579703457956739,
+        "rmse": 9.453156627110921e-05,
+        "max_absolute_error": 0.0007036179304122925
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005602636027406996,
+        "worst_row_relative_rmse": 0.0071728817708611075,
+        "p99_row_relative_rmse": 0.006795904393988746,
+        "rmse": 0.00015727950988803235,
+        "max_absolute_error": 0.0010840892791748047
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005362899376796271,
+        "worst_row_relative_rmse": 0.005959328110027078,
+        "p99_row_relative_rmse": 0.005742714414694482,
+        "rmse": 7.287376358779733e-05,
+        "max_absolute_error": 0.000733204185962677
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005584890078037691,
+        "worst_row_relative_rmse": 0.007278441166947144,
+        "p99_row_relative_rmse": 0.006901042288216948,
+        "rmse": 0.000151402046639977,
+        "max_absolute_error": 0.0010211169719696045
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.2.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0054244705188178,
+        "worst_row_relative_rmse": 0.006135977179386773,
+        "p99_row_relative_rmse": 0.005820661801318129,
+        "rmse": 7.722840807290824e-05,
+        "max_absolute_error": 0.0006045922636985779
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005364827401605909,
+        "worst_row_relative_rmse": 0.005844631514720509,
+        "p99_row_relative_rmse": 0.005583964050760625,
+        "rmse": 0.00010046465982039683,
+        "max_absolute_error": 0.00048424676060676575
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005363454772476399,
+        "worst_row_relative_rmse": 0.006498561761677996,
+        "p99_row_relative_rmse": 0.005776187446617261,
+        "rmse": 0.0001054779275537953,
+        "max_absolute_error": 0.0009086132049560547
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053657152513578825,
+        "worst_row_relative_rmse": 0.007655168810902322,
+        "p99_row_relative_rmse": 0.00576870022712456,
+        "rmse": 9.98781409157863e-05,
+        "max_absolute_error": 0.0006590127013623714
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005358435765810863,
+        "worst_row_relative_rmse": 0.006179435951490242,
+        "p99_row_relative_rmse": 0.005813437266333453,
+        "rmse": 0.00015647091982096928,
+        "max_absolute_error": 0.0010509490966796875
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005347285925705826,
+        "worst_row_relative_rmse": 0.005939932400198052,
+        "p99_row_relative_rmse": 0.005729861227170421,
+        "rmse": 9.258936455770997e-05,
+        "max_absolute_error": 0.0010793954133987427
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005326271121425804,
+        "worst_row_relative_rmse": 0.005824895426471657,
+        "p99_row_relative_rmse": 0.005724277706506618,
+        "rmse": 0.0001552648554544485,
+        "max_absolute_error": 0.000996321439743042
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.20.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005386413078230652,
+        "worst_row_relative_rmse": 0.0059022854971098725,
+        "p99_row_relative_rmse": 0.005805706492291197,
+        "rmse": 9.255195969049271e-05,
+        "max_absolute_error": 0.00045553967356681824
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369255674092431,
+        "worst_row_relative_rmse": 0.005761919630873125,
+        "p99_row_relative_rmse": 0.005572148540156004,
+        "rmse": 0.00010124527276519988,
+        "max_absolute_error": 0.0004920512437820435
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368905854042201,
+        "worst_row_relative_rmse": 0.008216244322394211,
+        "p99_row_relative_rmse": 0.005778166529302923,
+        "rmse": 0.0001058530921837518,
+        "max_absolute_error": 0.0007655173540115356
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537042568658259,
+        "worst_row_relative_rmse": 0.006616859056454698,
+        "p99_row_relative_rmse": 0.005762035171990579,
+        "rmse": 0.00010051441148373926,
+        "max_absolute_error": 0.0005290880799293518
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053617943229411335,
+        "worst_row_relative_rmse": 0.006401137997729034,
+        "p99_row_relative_rmse": 0.005753322148030362,
+        "rmse": 0.00015548175707258432,
+        "max_absolute_error": 0.0011315345764160156
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005347634076363739,
+        "worst_row_relative_rmse": 0.005939957028982747,
+        "p99_row_relative_rmse": 0.005727753257284345,
+        "rmse": 9.37429117505598e-05,
+        "max_absolute_error": 0.0006253495812416077
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005339290834460296,
+        "worst_row_relative_rmse": 0.005795936012758441,
+        "p99_row_relative_rmse": 0.005685585289910892,
+        "rmse": 0.0001558629946287665,
+        "max_absolute_error": 0.0011060237884521484
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.21.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005404855176575015,
+        "worst_row_relative_rmse": 0.006285352109444726,
+        "p99_row_relative_rmse": 0.005866902776432751,
+        "rmse": 9.365068414246711e-05,
+        "max_absolute_error": 0.0004839971661567688
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00536736752312997,
+        "worst_row_relative_rmse": 0.006455274093009077,
+        "p99_row_relative_rmse": 0.0056157153899551995,
+        "rmse": 0.00010135366257114616,
+        "max_absolute_error": 0.0005000755190849304
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005370056876268075,
+        "worst_row_relative_rmse": 0.00879258110047972,
+        "p99_row_relative_rmse": 0.005798735967590205,
+        "rmse": 0.0001069864425448084,
+        "max_absolute_error": 0.0012813955545425415
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005375445465718832,
+        "worst_row_relative_rmse": 0.009362429260170979,
+        "p99_row_relative_rmse": 0.005809838854515779,
+        "rmse": 0.00010082355021130246,
+        "max_absolute_error": 0.0006594923324882984
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053585488470875514,
+        "worst_row_relative_rmse": 0.006263132212367834,
+        "p99_row_relative_rmse": 0.005851031737969097,
+        "rmse": 0.00015933955758510898,
+        "max_absolute_error": 0.0010018348693847656
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005351532738126704,
+        "worst_row_relative_rmse": 0.005915361152462272,
+        "p99_row_relative_rmse": 0.005754760286383813,
+        "rmse": 9.052156301354015e-05,
+        "max_absolute_error": 0.0004521124064922333
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005336267567899277,
+        "worst_row_relative_rmse": 0.005908024986734745,
+        "p99_row_relative_rmse": 0.005735934391388513,
+        "rmse": 0.00015614742179483282,
+        "max_absolute_error": 0.0010402947664260864
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.22.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005424236686436133,
+        "worst_row_relative_rmse": 0.005911680691687702,
+        "p99_row_relative_rmse": 0.005802334324981958,
+        "rmse": 9.108120368104217e-05,
+        "max_absolute_error": 0.00045191124081611633
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369610339375453,
+        "worst_row_relative_rmse": 0.006234274788693334,
+        "p99_row_relative_rmse": 0.005600468639799944,
+        "rmse": 0.00010227853160722285,
+        "max_absolute_error": 0.0005022361874580383
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368656562249032,
+        "worst_row_relative_rmse": 0.008230208292420011,
+        "p99_row_relative_rmse": 0.005771587586016991,
+        "rmse": 0.00010779407427556513,
+        "max_absolute_error": 0.0007150433957576752
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005382732469627551,
+        "worst_row_relative_rmse": 0.008776349627811895,
+        "p99_row_relative_rmse": 0.005856485460000662,
+        "rmse": 0.00010192435382626509,
+        "max_absolute_error": 0.0006618641782552004
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005359240465592155,
+        "worst_row_relative_rmse": 0.0059459070749905,
+        "p99_row_relative_rmse": 0.005769528284683619,
+        "rmse": 0.00015681689119391638,
+        "max_absolute_error": 0.0011563301086425781
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005341574505200712,
+        "worst_row_relative_rmse": 0.005894085772416479,
+        "p99_row_relative_rmse": 0.005754989921785554,
+        "rmse": 9.631167923364315e-05,
+        "max_absolute_error": 0.0006247758865356445
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053414619032351954,
+        "worst_row_relative_rmse": 0.005820623949233359,
+        "p99_row_relative_rmse": 0.005711939396359288,
+        "rmse": 0.0001561058713503026,
+        "max_absolute_error": 0.0010709017515182495
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.23.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005425920977372009,
+        "worst_row_relative_rmse": 0.006074389387878794,
+        "p99_row_relative_rmse": 0.005818652978685148,
+        "rmse": 9.635537857888956e-05,
+        "max_absolute_error": 0.000506572425365448
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005371007449834893,
+        "worst_row_relative_rmse": 0.006204176636547076,
+        "p99_row_relative_rmse": 0.005586740447770716,
+        "rmse": 0.00010249825564975033,
+        "max_absolute_error": 0.0004912614822387695
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005377713060595838,
+        "worst_row_relative_rmse": 0.008361076082910724,
+        "p99_row_relative_rmse": 0.005821666483664197,
+        "rmse": 0.00011002200712534553,
+        "max_absolute_error": 0.0008569676429033279
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005386429660238277,
+        "worst_row_relative_rmse": 0.008029858613315717,
+        "p99_row_relative_rmse": 0.005901625664035728,
+        "rmse": 0.00010243576496661369,
+        "max_absolute_error": 0.0007524043321609497
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005362647523801987,
+        "worst_row_relative_rmse": 0.005971730916568287,
+        "p99_row_relative_rmse": 0.005789282908540912,
+        "rmse": 0.00015567857096056582,
+        "max_absolute_error": 0.0011593997478485107
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053559496046936324,
+        "worst_row_relative_rmse": 0.005940970103994071,
+        "p99_row_relative_rmse": 0.005767401049442913,
+        "rmse": 9.277975073462316e-05,
+        "max_absolute_error": 0.000456199049949646
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005331991367577352,
+        "worst_row_relative_rmse": 0.005944286270412117,
+        "p99_row_relative_rmse": 0.005746382534122866,
+        "rmse": 0.00015346406356668476,
+        "max_absolute_error": 0.0009218752384185791
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.24.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005434357639984804,
+        "worst_row_relative_rmse": 0.0063501500948984465,
+        "p99_row_relative_rmse": 0.005922437902691335,
+        "rmse": 9.382949913866055e-05,
+        "max_absolute_error": 0.00045800209045410156
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005374705196260042,
+        "worst_row_relative_rmse": 0.005767066229814886,
+        "p99_row_relative_rmse": 0.005570196638502037,
+        "rmse": 0.00010401284471732607,
+        "max_absolute_error": 0.0005141347646713257
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373298089663531,
+        "worst_row_relative_rmse": 0.006631097414786793,
+        "p99_row_relative_rmse": 0.005765649674791808,
+        "rmse": 0.0001104554722476758,
+        "max_absolute_error": 0.0009284764528274536
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537260898982841,
+        "worst_row_relative_rmse": 0.006452132565657633,
+        "p99_row_relative_rmse": 0.005770720610183337,
+        "rmse": 0.00010344604211971104,
+        "max_absolute_error": 0.0005279034376144409
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005366018886093168,
+        "worst_row_relative_rmse": 0.006011609999086166,
+        "p99_row_relative_rmse": 0.0057795178294702135,
+        "rmse": 0.00014325915750867195,
+        "max_absolute_error": 0.001025363802909851
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005346663152737799,
+        "worst_row_relative_rmse": 0.005958568495269905,
+        "p99_row_relative_rmse": 0.00576182518332389,
+        "rmse": 0.00010293433236357182,
+        "max_absolute_error": 0.0005889758467674255
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00533641973194032,
+        "worst_row_relative_rmse": 0.0060063500476844,
+        "p99_row_relative_rmse": 0.005798944542676667,
+        "rmse": 0.00014550741295452134,
+        "max_absolute_error": 0.0010481774806976318
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.25.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005443531174800727,
+        "worst_row_relative_rmse": 0.006033530530921205,
+        "p99_row_relative_rmse": 0.0058345179581078726,
+        "rmse": 9.983037510180168e-05,
+        "max_absolute_error": 0.0006488487124443054
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537484790286505,
+        "worst_row_relative_rmse": 0.005737920371758381,
+        "p99_row_relative_rmse": 0.005596189258420168,
+        "rmse": 0.00010571488670692956,
+        "max_absolute_error": 0.000494733452796936
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005372329817465684,
+        "worst_row_relative_rmse": 0.006033002476242186,
+        "p99_row_relative_rmse": 0.005779959557167198,
+        "rmse": 0.000111159357290224,
+        "max_absolute_error": 0.001087382435798645
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00537262034050129,
+        "worst_row_relative_rmse": 0.00647101201733413,
+        "p99_row_relative_rmse": 0.00577388716676901,
+        "rmse": 0.00010481615977715313,
+        "max_absolute_error": 0.0005548819899559021
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053753489110699975,
+        "worst_row_relative_rmse": 0.008165635488705053,
+        "p99_row_relative_rmse": 0.005817573240117501,
+        "rmse": 0.00014261089953644294,
+        "max_absolute_error": 0.0010214685462415218
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005341730780015421,
+        "worst_row_relative_rmse": 0.006096117777171034,
+        "p99_row_relative_rmse": 0.0057825046820157815,
+        "rmse": 0.00010396327421637772,
+        "max_absolute_error": 0.0005964711308479309
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00534758672024797,
+        "worst_row_relative_rmse": 0.005958503615674167,
+        "p99_row_relative_rmse": 0.005795094585522561,
+        "rmse": 0.00014315162672084154,
+        "max_absolute_error": 0.0010422170162200928
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.26.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005438193121700127,
+        "worst_row_relative_rmse": 0.006058543103422722,
+        "p99_row_relative_rmse": 0.0058210481223794,
+        "rmse": 0.00010076494611308786,
+        "max_absolute_error": 0.0005477443337440491
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376504110684904,
+        "worst_row_relative_rmse": 0.006866063887071845,
+        "p99_row_relative_rmse": 0.00560766872449748,
+        "rmse": 0.00010795449992138753,
+        "max_absolute_error": 0.0007949545979499817
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373842220603021,
+        "worst_row_relative_rmse": 0.0063785445889445475,
+        "p99_row_relative_rmse": 0.005780887192110589,
+        "rmse": 0.00011324776767712438,
+        "max_absolute_error": 0.00067872554063797
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373363024135605,
+        "worst_row_relative_rmse": 0.006687284915978653,
+        "p99_row_relative_rmse": 0.005776144142171679,
+        "rmse": 0.00010667511551828669,
+        "max_absolute_error": 0.0005477368831634521
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005359369596060932,
+        "worst_row_relative_rmse": 0.005904758944418726,
+        "p99_row_relative_rmse": 0.005746288134770246,
+        "rmse": 0.00014960445829186758,
+        "max_absolute_error": 0.0009433478116989136
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005359513445022292,
+        "worst_row_relative_rmse": 0.005948741866298014,
+        "p99_row_relative_rmse": 0.005728960418697787,
+        "rmse": 9.719911332931314e-05,
+        "max_absolute_error": 0.0009667426347732544
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00536242435595675,
+        "worst_row_relative_rmse": 0.006183671025993578,
+        "p99_row_relative_rmse": 0.005827506359461853,
+        "rmse": 0.000150220740760152,
+        "max_absolute_error": 0.0008531808853149414
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.27.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005446330166677956,
+        "worst_row_relative_rmse": 0.006052674698715964,
+        "p99_row_relative_rmse": 0.0058642568371881755,
+        "rmse": 9.696432730579675e-05,
+        "max_absolute_error": 0.0004982277750968933
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053823920419654074,
+        "worst_row_relative_rmse": 0.00694318562546676,
+        "p99_row_relative_rmse": 0.0055943850683229405,
+        "rmse": 0.00010917879589758731,
+        "max_absolute_error": 0.0009451061487197876
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053782623600163535,
+        "worst_row_relative_rmse": 0.006400634372260279,
+        "p99_row_relative_rmse": 0.005807767286734589,
+        "rmse": 0.00011533894973472978,
+        "max_absolute_error": 0.0006741657853126526
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005378208501414558,
+        "worst_row_relative_rmse": 0.0062039811775572665,
+        "p99_row_relative_rmse": 0.005775952987266117,
+        "rmse": 0.00010870557727515773,
+        "max_absolute_error": 0.0005085989832878113
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005400876563923442,
+        "worst_row_relative_rmse": 0.006165982710143757,
+        "p99_row_relative_rmse": 0.005883936517392383,
+        "rmse": 0.00014303582634107897,
+        "max_absolute_error": 0.0008926689624786377
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00536392980167574,
+        "worst_row_relative_rmse": 0.0059723503674584694,
+        "p99_row_relative_rmse": 0.005780103378322315,
+        "rmse": 0.0001159533888139881,
+        "max_absolute_error": 0.0007175803184509277
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005348767423210399,
+        "worst_row_relative_rmse": 0.005986248072551859,
+        "p99_row_relative_rmse": 0.005769351525028232,
+        "rmse": 0.00014553046188186866,
+        "max_absolute_error": 0.0008981972932815552
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.28.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005432835716966633,
+        "worst_row_relative_rmse": 0.0060350251400547745,
+        "p99_row_relative_rmse": 0.0058391450445605874,
+        "rmse": 0.00011104780779321124,
+        "max_absolute_error": 0.0006518512964248657
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005502970672108202,
+        "worst_row_relative_rmse": 0.006699239174693742,
+        "p99_row_relative_rmse": 0.005818016423641444,
+        "rmse": 0.00011188365270678504,
+        "max_absolute_error": 0.0019021108746528625
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053754798186491665,
+        "worst_row_relative_rmse": 0.006490674915631558,
+        "p99_row_relative_rmse": 0.005796350475226462,
+        "rmse": 0.00012405330654288832,
+        "max_absolute_error": 0.0007247552275657654
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005391482305388555,
+        "worst_row_relative_rmse": 0.006713537413833122,
+        "p99_row_relative_rmse": 0.006000343441411124,
+        "rmse": 0.00011762268371237513,
+        "max_absolute_error": 0.0006675049662590027
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369056958883607,
+        "worst_row_relative_rmse": 0.006210804751155407,
+        "p99_row_relative_rmse": 0.005789045506391602,
+        "rmse": 0.00014616812301698762,
+        "max_absolute_error": 0.0009518712759017944
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005363956312063746,
+        "worst_row_relative_rmse": 0.005898408848893651,
+        "p99_row_relative_rmse": 0.005805446852594923,
+        "rmse": 0.00011590492070870216,
+        "max_absolute_error": 0.0009071752429008484
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005365792235714489,
+        "worst_row_relative_rmse": 0.006075489507103054,
+        "p99_row_relative_rmse": 0.00582150267916758,
+        "rmse": 0.00014602536901369236,
+        "max_absolute_error": 0.0008793547749519348
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.29.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005432577174005831,
+        "worst_row_relative_rmse": 0.006161934336421159,
+        "p99_row_relative_rmse": 0.0058842660938467715,
+        "rmse": 0.00011590316286380331,
+        "max_absolute_error": 0.0006281659007072449
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005426890775907995,
+        "worst_row_relative_rmse": 0.008489539789326768,
+        "p99_row_relative_rmse": 0.005661262083513614,
+        "rmse": 9.566095140743075e-05,
+        "max_absolute_error": 0.0022831163369119167
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005364879867886006,
+        "worst_row_relative_rmse": 0.006010624210627975,
+        "p99_row_relative_rmse": 0.005772579204567514,
+        "rmse": 0.00010071683956055751,
+        "max_absolute_error": 0.002399742603302002
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005370036063881738,
+        "worst_row_relative_rmse": 0.006017137129733852,
+        "p99_row_relative_rmse": 0.005777772400928833,
+        "rmse": 9.498226830103477e-05,
+        "max_absolute_error": 0.0012448430061340332
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005562916761546716,
+        "worst_row_relative_rmse": 0.006975372989630758,
+        "p99_row_relative_rmse": 0.006627194471428019,
+        "rmse": 0.00017577116491727243,
+        "max_absolute_error": 0.0011632442474365234
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005379412125836255,
+        "worst_row_relative_rmse": 0.006107649897009772,
+        "p99_row_relative_rmse": 0.00585548934253766,
+        "rmse": 6.744684843514753e-05,
+        "max_absolute_error": 0.0007656365633010864
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.00539518330100114,
+        "worst_row_relative_rmse": 0.006480333215424782,
+        "p99_row_relative_rmse": 0.006139849799082346,
+        "rmse": 0.00016179395107448498,
+        "max_absolute_error": 0.0014042407274246216
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.3.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005417153875790462,
+        "worst_row_relative_rmse": 0.006015408943421254,
+        "p99_row_relative_rmse": 0.005828962658346674,
+        "rmse": 7.327511709820724e-05,
+        "max_absolute_error": 0.0003783181309700012
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053776987444241735,
+        "worst_row_relative_rmse": 0.007621688753542508,
+        "p99_row_relative_rmse": 0.00558525191586464,
+        "rmse": 9.638099263749506e-05,
+        "max_absolute_error": 0.0021775681525468826
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368255742132795,
+        "worst_row_relative_rmse": 0.006368736384862579,
+        "p99_row_relative_rmse": 0.005757502065939637,
+        "rmse": 9.907570696092812e-05,
+        "max_absolute_error": 0.001496538519859314
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376935720578727,
+        "worst_row_relative_rmse": 0.007899114221552322,
+        "p99_row_relative_rmse": 0.005781033147063734,
+        "rmse": 9.60610591655649e-05,
+        "max_absolute_error": 0.0009327600710093975
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005403219334233957,
+        "worst_row_relative_rmse": 0.0071162510401918625,
+        "p99_row_relative_rmse": 0.006343407243532725,
+        "rmse": 0.00015485394108695103,
+        "max_absolute_error": 0.0016223490238189697
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005347045838518027,
+        "worst_row_relative_rmse": 0.005930940810524981,
+        "p99_row_relative_rmse": 0.005751029710099263,
+        "rmse": 8.306957780237996e-05,
+        "max_absolute_error": 0.0008438229560852051
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005366767330943401,
+        "worst_row_relative_rmse": 0.006142923958057381,
+        "p99_row_relative_rmse": 0.00592515008642595,
+        "rmse": 0.00014658470961047382,
+        "max_absolute_error": 0.001023992896080017
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.4.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005410040614100073,
+        "worst_row_relative_rmse": 0.005958507822477497,
+        "p99_row_relative_rmse": 0.005806401413852984,
+        "rmse": 8.650032964240323e-05,
+        "max_absolute_error": 0.00041948631405830383
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005379717947206985,
+        "worst_row_relative_rmse": 0.00670554472043938,
+        "p99_row_relative_rmse": 0.0057309838321744876,
+        "rmse": 9.563870495104537e-05,
+        "max_absolute_error": 0.000741913914680481
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005379586097720924,
+        "worst_row_relative_rmse": 0.006305447875459431,
+        "p99_row_relative_rmse": 0.005792238624297444,
+        "rmse": 9.967239615263033e-05,
+        "max_absolute_error": 0.0013236552476882935
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005383359723606207,
+        "worst_row_relative_rmse": 0.007774083823605308,
+        "p99_row_relative_rmse": 0.005810219967451699,
+        "rmse": 9.573618917512907e-05,
+        "max_absolute_error": 0.0005288673564791679
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005363155886706511,
+        "worst_row_relative_rmse": 0.006716127685474592,
+        "p99_row_relative_rmse": 0.006138980987295166,
+        "rmse": 0.00014925353910948783,
+        "max_absolute_error": 0.0010755360126495361
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005338806549654177,
+        "worst_row_relative_rmse": 0.005870406686324038,
+        "p99_row_relative_rmse": 0.0057201481961006335,
+        "rmse": 8.007539105877238e-05,
+        "max_absolute_error": 0.000631529837846756
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053850763919427785,
+        "worst_row_relative_rmse": 0.006294091696677358,
+        "p99_row_relative_rmse": 0.005994893720252978,
+        "rmse": 0.00014166198094966046,
+        "max_absolute_error": 0.0009000375866889954
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.5.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005410011240393848,
+        "worst_row_relative_rmse": 0.005902403306321257,
+        "p99_row_relative_rmse": 0.005803626663615978,
+        "rmse": 8.405414178984753e-05,
+        "max_absolute_error": 0.0003953874111175537
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005370723506228904,
+        "worst_row_relative_rmse": 0.006366741300955572,
+        "p99_row_relative_rmse": 0.005618050577070962,
+        "rmse": 9.647076670250621e-05,
+        "max_absolute_error": 0.0006598532199859619
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005380266416364987,
+        "worst_row_relative_rmse": 0.006097930452363265,
+        "p99_row_relative_rmse": 0.005780356131456494,
+        "rmse": 0.00010015062721261749,
+        "max_absolute_error": 0.001103237271308899
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005376139788783407,
+        "worst_row_relative_rmse": 0.006526395538894207,
+        "p99_row_relative_rmse": 0.00577148324119366,
+        "rmse": 9.634662816434022e-05,
+        "max_absolute_error": 0.00046991556882858276
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005402264351828847,
+        "worst_row_relative_rmse": 0.007040703525840938,
+        "p99_row_relative_rmse": 0.0061650400733965355,
+        "rmse": 0.0001498034988265971,
+        "max_absolute_error": 0.0014091581106185913
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005346359250801483,
+        "worst_row_relative_rmse": 0.0058264925536557505,
+        "p99_row_relative_rmse": 0.005712560011891858,
+        "rmse": 8.052705888874533e-05,
+        "max_absolute_error": 0.0006329864263534546
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005362557792514918,
+        "worst_row_relative_rmse": 0.006193147296792408,
+        "p99_row_relative_rmse": 0.0058607425674938336,
+        "rmse": 0.00015173721529268045,
+        "max_absolute_error": 0.0015108883380889893
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.6.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0054192674982555195,
+        "worst_row_relative_rmse": 0.005920522063501266,
+        "p99_row_relative_rmse": 0.0058101927692402995,
+        "rmse": 8.21017729952104e-05,
+        "max_absolute_error": 0.00046232715249061584
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053715259757424255,
+        "worst_row_relative_rmse": 0.005902797484318925,
+        "p99_row_relative_rmse": 0.005570101216841051,
+        "rmse": 9.776595800725536e-05,
+        "max_absolute_error": 0.0007483959197998047
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373186078560725,
+        "worst_row_relative_rmse": 0.006039630578527969,
+        "p99_row_relative_rmse": 0.005775411829606224,
+        "rmse": 0.00010056273494750398,
+        "max_absolute_error": 0.001362040638923645
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373541116582371,
+        "worst_row_relative_rmse": 0.0066351832505362664,
+        "p99_row_relative_rmse": 0.005792312893498549,
+        "rmse": 9.732969055022295e-05,
+        "max_absolute_error": 0.0004636123776435852
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368201131970832,
+        "worst_row_relative_rmse": 0.006135008985497474,
+        "p99_row_relative_rmse": 0.005935387714074297,
+        "rmse": 0.00015385244149223508,
+        "max_absolute_error": 0.0010158568620681763
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005339193571743597,
+        "worst_row_relative_rmse": 0.005831140334802098,
+        "p99_row_relative_rmse": 0.005713913015985847,
+        "rmse": 8.510227734411451e-05,
+        "max_absolute_error": 0.0006831437349319458
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005361821780210381,
+        "worst_row_relative_rmse": 0.0063323286079134,
+        "p99_row_relative_rmse": 0.005832767774246134,
+        "rmse": 0.0001485500725907813,
+        "max_absolute_error": 0.0011451542377471924
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.7.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005438175309994887,
+        "worst_row_relative_rmse": 0.00585712440805808,
+        "p99_row_relative_rmse": 0.005812263815951892,
+        "rmse": 9.000345415917554e-05,
+        "max_absolute_error": 0.00044148415327072144
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.0053610848331706274,
+        "worst_row_relative_rmse": 0.005718229959297548,
+        "p99_row_relative_rmse": 0.00559849821511079,
+        "rmse": 9.802436400424518e-05,
+        "max_absolute_error": 0.0007017329335212708
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005367908341321655,
+        "worst_row_relative_rmse": 0.006226193179720634,
+        "p99_row_relative_rmse": 0.005775708159918588,
+        "rmse": 0.00010072705960299894,
+        "max_absolute_error": 0.0008022859692573547
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005369264915155203,
+        "worst_row_relative_rmse": 0.006687843518691606,
+        "p99_row_relative_rmse": 0.005783597745366414,
+        "rmse": 9.766784973144001e-05,
+        "max_absolute_error": 0.00047234445810317993
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005411901286522858,
+        "worst_row_relative_rmse": 0.00702597907225268,
+        "p99_row_relative_rmse": 0.006202153780463614,
+        "rmse": 0.00015100625966458673,
+        "max_absolute_error": 0.0010492056608200073
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005342722865231365,
+        "worst_row_relative_rmse": 0.005842132625777403,
+        "p99_row_relative_rmse": 0.005759665404104267,
+        "rmse": 8.515137723211014e-05,
+        "max_absolute_error": 0.0005516558885574341
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005349663828389091,
+        "worst_row_relative_rmse": 0.0062355156082737504,
+        "p99_row_relative_rmse": 0.0058472341483764845,
+        "rmse": 0.0001475665826464704,
+        "max_absolute_error": 0.0010907948017120361
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.8.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005427772665539971,
+        "worst_row_relative_rmse": 0.0059368443399884984,
+        "p99_row_relative_rmse": 0.005816849106658688,
+        "rmse": 8.878576702398686e-05,
+        "max_absolute_error": 0.00044286251068115234
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.down_proj.weight",
+      "source_shape": [
+        1024,
+        4096
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005365208769786925,
+        "worst_row_relative_rmse": 0.005645796537894115,
+        "p99_row_relative_rmse": 0.005556705285101626,
+        "rmse": 9.829717220148225e-05,
+        "max_absolute_error": 0.0005557835102081299
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.gate_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005368076536783422,
+        "worst_row_relative_rmse": 0.0060212749257156604,
+        "p99_row_relative_rmse": 0.005759853272528053,
+        "rmse": 0.0001012094525693992,
+        "max_absolute_error": 0.0007524788379669189
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.mlp.up_proj.weight",
+      "source_shape": [
+        4096,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005370863282136765,
+        "worst_row_relative_rmse": 0.006188880487349604,
+        "p99_row_relative_rmse": 0.0057840877206665284,
+        "rmse": 9.783713822157307e-05,
+        "max_absolute_error": 0.0005163326859474182
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.k_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005412638325002325,
+        "worst_row_relative_rmse": 0.008530873925559842,
+        "p99_row_relative_rmse": 0.0061454956361216085,
+        "rmse": 0.0001512838822559826,
+        "max_absolute_error": 0.0011758804321289062
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.o_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005348000903804411,
+        "worst_row_relative_rmse": 0.0058326829069914815,
+        "p99_row_relative_rmse": 0.005746678223793035,
+        "rmse": 8.0716027287785e-05,
+        "max_absolute_error": 0.0005303323268890381
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.q_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005373629465536638,
+        "worst_row_relative_rmse": 0.006261371706001237,
+        "p99_row_relative_rmse": 0.005917811725818718,
+        "rmse": 0.00015351610082341572,
+        "max_absolute_error": 0.0014060884714126587
+      },
+      "error_gate_applied": false
+    },
+    {
+      "weight": "t3.tfmr.model.layers.9.self_attn.v_proj.weight",
+      "source_shape": [
+        1024,
+        1024
+      ],
+      "source_dtype": "mlx.core.float32",
+      "stored_as": "affine_q8",
+      "bits": 8,
+      "group_size": 64,
+      "weight_domain_error": {
+        "relative_rmse": 0.005418886964026651,
+        "worst_row_relative_rmse": 0.006006238068422857,
+        "p99_row_relative_rmse": 0.005787714630837859,
+        "rmse": 8.238158194384197e-05,
+        "max_absolute_error": 0.00041590631008148193
+      },
+      "error_gate_applied": false
+    }
+  ],
+  "limits": "Weight reconstruction metrics do not measure audio degradation or naturalness."
+}

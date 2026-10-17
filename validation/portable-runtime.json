@@ -1,0 +1,137 @@
+{
+  "smoke": {
+    "oQ8": {
+      "checksums_verified": 46,
+      "scope": "oQ8",
+      "model": "oQ8",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.44555454199871747,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "logits_shape": [
+        1,
+        8,
+        8194
+      ],
+      "logits_finite": true,
+      "audio_generated": false,
+      "test": "Unconditioned transformer forward; this is not speech-quality assessment",
+      "status": "PASS"
+    },
+    "FP16T3": {
+      "checksums_verified": 46,
+      "scope": "FP16T3",
+      "model": "FP16T3",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.5412051249950309,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "logits_shape": [
+        1,
+        8,
+        8194
+      ],
+      "logits_finite": true,
+      "audio_generated": false,
+      "test": "Unconditioned transformer forward; this is not speech-quality assessment",
+      "status": "PASS"
+    },
+    "FP32": {
+      "checksums_verified": 46,
+      "scope": "FP32",
+      "model": "FP32",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.8473999170018942,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "logits_shape": [
+        1,
+        8,
+        8194
+      ],
+      "logits_finite": true,
+      "audio_generated": false,
+      "test": "Unconditioned transformer forward; this is not speech-quality assessment",
+      "status": "PASS"
+    },
+    "oQ6": {
+      "checksums_verified": 46,
+      "scope": "oQ6",
+      "model": "oQ6",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.3690065000046161,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "logits_shape": [
+        1,
+        8,
+        8194
+      ],
+      "logits_finite": true,
+      "audio_generated": false,
+      "test": "Unconditioned transformer forward; this is not speech-quality assessment",
+      "status": "PASS"
+    },
+    "oQ5": {
+      "checksums_verified": 46,
+      "scope": "oQ5",
+      "model": "oQ5",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.48407445900375023,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "logits_shape": [
+        1,
+        8,
+        8194
+      ],
+      "logits_finite": true,
+      "audio_generated": false,
+      "test": "Unconditioned transformer forward; this is not speech-quality assessment",
+      "status": "PASS"
+    }
+  },
+  "generation": {
+    "oQ8": {
+      "checksums_verified": 46,
+      "scope": "oQ8",
+      "model": "oQ8",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.4917385410008137,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "audio_generated": true,
+      "output": "LOCAL_GENERATED_SAMPLE_NOT_INCLUDED",
+      "sample_rate": 24000,
+      "audio_seconds": 4.2,
+      "generation_seconds": 3.2760574170024483,
+      "rtf": 0.7800136707148686,
+      "decoder_limit_fraction": 0.0,
+      "peak_mlx_memory_bytes": 3048424623,
+      "audio_sha256": "45d26cd936c11edfb11ee777129fb0bd0ea3bd048d224ce56ab02a69401f02e9",
+      "human_listening_assessed": false,
+      "status": "PASS"
+    },
+    "FP16T3": {
+      "checksums_verified": 46,
+      "scope": "FP16T3",
+      "model": "FP16T3",
+      "backend": "Device(gpu, 0)",
+      "load_seconds": 0.3954080420007813,
+      "runtime_source_verified": true,
+      "local_tokenizer_verified": true,
+      "audio_generated": true,
+      "output": "LOCAL_GENERATED_SAMPLE_NOT_INCLUDED",
+      "sample_rate": 24000,
+      "audio_seconds": 4.04,
+      "generation_seconds": 7.123440790994209,
+      "rtf": 1.7632279185629232,
+      "decoder_limit_fraction": 0.0,
+      "peak_mlx_memory_bytes": 3402271063,
+      "audio_sha256": "60a660cd9886c6cdc7614432bf0c455c6fc0be978c3c406e6c6b4010fc74aa43",
+      "human_listening_assessed": false,
+      "status": "PASS"
+    }
+  },
+  "execution": "Native Apple Silicon Metal; invoked from a different working directory; pinned offline tokenizer; original reference supplied locally."
+}

@@ -1,0 +1,7 @@
+{
+  "model_type": "s3_tokenizer_v2",
+  "version": "2.0",
+  "sample_rate": 16000,
+  "token_rate": 25,
+  "codebook_size": 6561
+}

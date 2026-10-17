@@ -1,0 +1,261 @@
+{
+  "created_utc": "2026-10-16T01:13:59.318736+00:00",
+  "source": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+  "variant": "regular-mlx8",
+  "original_source_revisions": {
+    "ResembleAI/Chatterbox-Multilingual-es-mx-latam": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+    "ResembleAI/chatterbox": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+    "mlx-community/S3TokenizerV2": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec"
+  },
+  "source_assets": [
+    {
+      "role": "t3",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "t3_es_mx_latam.safetensors",
+      "bytes": 2143990280,
+      "sha256": "c66c4517f11c2b35a56e28615c0689deb864cbc411e329552223bbd0a6a063f8"
+    },
+    {
+      "role": "s3gen",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "s3gen_v3.safetensors",
+      "bytes": 1056381804,
+      "sha256": "4a46190f3dccc2230fbb3488a930bccc925862ee68f2662433dfcfe93ce6c2cb"
+    },
+    {
+      "role": "text_tokenizer",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "grapheme_mtl_merged_expanded_v1.json",
+      "bytes": 69989,
+      "sha256": "69632f47220a788a52ce2661d096453c5655e9bf25289d89a8d832c46ee07dbf"
+    },
+    {
+      "role": "ve",
+      "repository": "ResembleAI/chatterbox",
+      "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+      "filename": "ve.safetensors",
+      "bytes": 5695784,
+      "sha256": "f0921cab452fa278bc25cd23ffd59d36f816d7dc5181dd1bef9751a7fb61f63c"
+    },
+    {
+      "role": "cangjie",
+      "repository": "ResembleAI/chatterbox",
+      "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+      "filename": "Cangjie5_TC.json",
+      "bytes": 1920163,
+      "sha256": "7073fd9de919443ae88e0bd2449917a65fe54898a4413ed1edcc4b67f28bce8c"
+    },
+    {
+      "role": "s3tok_weights",
+      "repository": "mlx-community/S3TokenizerV2",
+      "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+      "filename": "model.safetensors",
+      "bytes": 494868984,
+      "sha256": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc"
+    },
+    {
+      "role": "s3tok_config",
+      "repository": "mlx-community/S3TokenizerV2",
+      "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+      "filename": "config.json",
+      "bytes": 126,
+      "sha256": "8591fcc0eaae8c2bbfc69cf9d439933ecdf2d58cb9be63d00ce88736c4f2aa9d"
+    }
+  ],
+  "unquantized_input_sha256": "c3ea06972c2e249a97b06bc28e42172dde643283542c7ede306c3aa5f4eb3a6e",
+  "quantization": {
+    "bits": 8,
+    "group_size": 64,
+    "mode": "affine",
+    "scope": "All 210 T3 transformer attention/MLP linear matrices",
+    "hq_boundary_exemptions": false,
+    "error_gates": false,
+    "activation_quantization": false,
+    "kv_cache_quantization": false,
+    "global_dtype_cast": false
+  },
+  "weight_file": {
+    "bytes": 1264130033,
+    "sha256": "35c2653a76fd5ba5f1643ae641638a20eb18e115a4b810999e05000044e50a79",
+    "tensors": 2907,
+    "exact_serialization_roundtrip": true
+  },
+  "runtime_source_sha256": {
+    "mlx_audio.tts.models.chatterbox.chatterbox": "3b5f2cf6c422aa8e1e291e62fea86ab10ba4cb0ae78771f7741de056e7c775ee",
+    "mlx_audio.tts.models.chatterbox.config": "feedd4123bf61814ccc0bd0e1583b2c409ce7c17bf6f50e6dfbc8866c9c8d54e",
+    "mlx_audio.tts.models.chatterbox.tokenizer": "d8bf94ce7919264176a6bdaa6e8610f0bd396283ab5f670421d5a727ded45afb",
+    "mlx_audio.tts.models.chatterbox.t3.t3": "79e82bf5b98422252198ee204a9f4a55c4d65726a73ce5fdd0d99df46df9281e",
+    "mlx_audio.tts.models.chatterbox.s3gen.s3gen": "447d22074d026c9f6f1ea19f5c1fccbf037802b715c4fbb70ce251de853afbd4",
+    "mlx_audio.tts.models.chatterbox.voice_encoder.voice_encoder": "2d9aa695d0055dac5be630dd9d666d4752af0626dc17edf3377b93745437f7af",
+    "mlx_audio.lm.models.llama": "f7281686d16e685626e35440ad2af9f73ea154c72d3e074f8f4a905f81bc1777",
+    "mlx_audio.utils": "a9a6e2c29962949ce0e278d4b923394d81529586feec4599616af292ce64de42"
+  },
+  "runtime_packages": {
+    "mlx": "0.32.4",
+    "mlx-cpu": "0.32.4",
+    "mlx-audio": "0.5.9",
+    "numpy": "2.5.4",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "2.2.0",
+    "tokenizers": "0.23.3",
+    "soundfile": "0.14.0"
+  },
+  "mlx_audio_commit": "dad2087f790dfe96b07d5aac1405db4b578b411f",
+  "upstream_quantizer": "mlx_audio.tts.models.chatterbox.scripts.convert.quantize_t3_backbone",
+  "quantizer_source_sha256": "b5ffa01079ed2f8337988d41fb6da4a320734792b151d0f5a3674c9b47f15c55",
+  "strict_t3_source_loading": {
+    "checkpoint_tensors": 292,
+    "allowed_runtime_only_missing": [
+      "tfmr.lm_head.weight"
+    ],
+    "constructor_shape_adjustments": [
+      {
+        "tensor": "tfmr.model.embed_tokens.weight",
+        "constructor_shape": [
+          4000,
+          1024
+        ],
+        "source_shape": [
+          8,
+          1024
+        ],
+        "reason": "Unused wrapper embedding; all T3 forwards supply input_embeddings; source values preserved exactly."
+      }
+    ]
+  },
+  "tokenizer_checks": {
+    "vocabulary_entries": 2454,
+    "es_token_id": 635,
+    "cases": [
+      {
+        "text": "¡Mañana! ¿Cómo estás?",
+        "token_ids": [
+          635,
+          330,
+          289,
+          43,
+          644,
+          43,
+          14,
+          3,
+          2,
+          360,
+          279,
+          28,
+          764,
+          115,
+          2,
+          218,
+          14,
+          764,
+          32,
+          13
+        ]
+      },
+      {
+        "text": "ÁÉÍÓÚ áéíóú Ññ Üü",
+        "token_ids": [
+          635,
+          277,
+          764,
+          281,
+          764,
+          285,
+          764,
+          291,
+          764,
+          297,
+          764,
+          2,
+          14,
+          764,
+          18,
+          764,
+          22,
+          764,
+          28,
+          764,
+          34,
+          764,
+          2,
+          290,
+          644,
+          27,
+          644,
+          2,
+          297,
+          762,
+          34,
+          762
+        ]
+      },
+      {
+        "text": "El niño vio un pingüino.",
+        "token_ids": [
+          635,
+          281,
+          25,
+          2,
+          27,
+          41,
+          644,
+          28,
+          2,
+          35,
+          22,
+          28,
+          2,
+          97,
+          2,
+          29,
+          52,
+          34,
+          762,
+          41,
+          28,
+          9
+        ]
+      },
+      {
+        "text": "María y José tomaron café.",
+        "token_ids": [
+          635,
+          289,
+          59,
+          22,
+          764,
+          14,
+          2,
+          38,
+          2,
+          286,
+          28,
+          66,
+          764,
+          2,
+          51,
+          26,
+          59,
+          47,
+          2,
+          183,
+          132,
+          764,
+          9
+        ]
+      }
+    ],
+    "passed": true
+  },
+  "all_nonbackbone_tensors_exactly_preserved": true,
+  "all_packed_tensors_match_upstream": true,
+  "conversion_platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "conversion_backend": "Device(cpu, 0)",
+  "elapsed_seconds": 75.42612992499926,
+  "source_baseline_unchanged": true,
+  "audio_validation": "Not performed",
+  "mac_transfer": "Not performed by converter"
+}

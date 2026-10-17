@@ -1,0 +1,194 @@
+{
+  "experiment": {
+    "corpus_sha256": "b2893904f141eb99ceffd1462005a50192d75e5663a7da3b12121fdfe0e7eaa0",
+    "reference_path": "REFERENCE_NOT_INCLUDED",
+    "reference_sha256": "ab1fbf6bd3394330b6b3d5eda886e4fdcb266735f718acfd484029c26588f89f",
+    "settings": {
+      "seed_values": [
+        42,
+        43,
+        44
+      ],
+      "temperature": 0.8,
+      "exaggeration": 0.5,
+      "cfg_weight": 0.5,
+      "repetition_penalty": 1.2,
+      "min_p": 0.05,
+      "top_p": 1.0,
+      "max_new_tokens": 1200,
+      "stream": false,
+      "lang_code": "es"
+    },
+    "constructor_seed": 20261017,
+    "variants": [
+      "FP32",
+      "FP16T3",
+      "oQ8"
+    ],
+    "versions": {
+      "mlx": "0.32.4",
+      "mlx-audio": "0.5.9",
+      "numpy": "2.5.4",
+      "soundfile": "0.14.0",
+      "huggingface-hub": "2.2.0"
+    },
+    "runtime_fix_sha256": "82b8f4fa56dde6d5476075e61c3572bfabf8d5f673f4b2fbd0f8fe3d174861d0",
+    "speech_tokenizer_lock": {
+      "repository": "mlx-community/S3TokenizerV2",
+      "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+      "sha256": {
+        "model.safetensors": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc",
+        "config.json": "8591fcc0eaae8c2bbfc69cf9d439933ecdf2d58cb9be63d00ce88736c4f2aa9d"
+      }
+    }
+  },
+  "models": [
+    {
+      "variant": "FP32",
+      "clips": 90,
+      "weight_bytes": 2711115367,
+      "pooled_wer": 0.015384615384615385,
+      "word_errors": 24,
+      "reference_words": 1560,
+      "literal_word_errors": 45,
+      "literal_reference_words": 1563,
+      "literal_wer": 0.028790786948176585,
+      "exact_transcripts": 72,
+      "signal_passes": 90,
+      "max_decoder_limit_fraction": 0.0,
+      "max_peak": 0.7955355644226074,
+      "pooled_rtf": 1.0633995463316483,
+      "generation_seconds": 591.0800038329835,
+      "audio_seconds": 555.84,
+      "peak_mlx_memory_bytes": 4838044407,
+      "per_seed": {
+        "42": {
+          "word_errors": 6,
+          "reference_words": 520
+        },
+        "43": {
+          "word_errors": 10,
+          "reference_words": 520
+        },
+        "44": {
+          "word_errors": 8,
+          "reference_words": 520
+        }
+      }
+    },
+    {
+      "variant": "FP16T3",
+      "clips": 90,
+      "weight_bytes": 1639136135,
+      "pooled_wer": 0.016666666666666666,
+      "word_errors": 26,
+      "reference_words": 1560,
+      "literal_word_errors": 49,
+      "literal_reference_words": 1563,
+      "literal_wer": 0.03134996801023673,
+      "exact_transcripts": 73,
+      "signal_passes": 90,
+      "max_decoder_limit_fraction": 0.0,
+      "max_peak": 0.8160157203674316,
+      "pooled_rtf": 1.7612313657578131,
+      "generation_seconds": 982.5557543289688,
+      "audio_seconds": 557.88,
+      "peak_mlx_memory_bytes": 3770108324,
+      "per_seed": {
+        "42": {
+          "word_errors": 7,
+          "reference_words": 520
+        },
+        "43": {
+          "word_errors": 11,
+          "reference_words": 520
+        },
+        "44": {
+          "word_errors": 8,
+          "reference_words": 520
+        }
+      }
+    },
+    {
+      "variant": "oQ8",
+      "clips": 90,
+      "weight_bytes": 1264128643,
+      "pooled_wer": 0.015384615384615385,
+      "word_errors": 24,
+      "reference_words": 1560,
+      "literal_word_errors": 47,
+      "literal_reference_words": 1563,
+      "literal_wer": 0.030070377479206652,
+      "exact_transcripts": 73,
+      "signal_passes": 90,
+      "max_decoder_limit_fraction": 0.0,
+      "max_peak": 0.7111217975616455,
+      "pooled_rtf": 0.7330142433814998,
+      "generation_seconds": 407.35067533196707,
+      "audio_seconds": 555.72,
+      "peak_mlx_memory_bytes": 3374902576,
+      "per_seed": {
+        "42": {
+          "word_errors": 9,
+          "reference_words": 520
+        },
+        "43": {
+          "word_errors": 11,
+          "reference_words": 520
+        },
+        "44": {
+          "word_errors": 4,
+          "reference_words": 520
+        }
+      }
+    }
+  ],
+  "paired_asr_comparisons": [
+    {
+      "variant": "FP16T3",
+      "baseline": "FP32",
+      "pooled_wer_difference": 0.001282051282051282,
+      "bootstrap_95_interval": [
+        -0.00516795865633075,
+        0.009689922480620155
+      ],
+      "bootstrap_method": "10000 paired resamples of passages, retaining all seeds within each passage; exploratory, no prespecified equivalence margin",
+      "passages_fewer_errors": 5,
+      "passages_more_errors": 4,
+      "passages_equal_errors": 21
+    },
+    {
+      "variant": "oQ8",
+      "baseline": "FP32",
+      "pooled_wer_difference": 0.0,
+      "bootstrap_95_interval": [
+        -0.01052043665905052,
+        0.01041717628832354
+      ],
+      "bootstrap_method": "10000 paired resamples of passages, retaining all seeds within each passage; exploratory, no prespecified equivalence margin",
+      "passages_fewer_errors": 7,
+      "passages_more_errors": 7,
+      "passages_equal_errors": 16
+    }
+  ],
+  "fp16_runtime_context_probe": {
+    "t3_stored_weight_dtype": "mlx.core.float16",
+    "context_dtype": "mlx.core.float32",
+    "context_shape": [
+      2,
+      92,
+      1024
+    ],
+    "policy": "Observation of the existing FP16-weight runner. No dtype casts or runtime optimization applied.",
+    "first_layer_k_cache_dtype": "mlx.core.float32",
+    "first_layer_v_cache_dtype": "mlx.core.float32"
+  },
+  "limits": [
+    "One existing Carina Spanish voice reference; 30 passages and three seeds per model.",
+    "Whisper-medium recognition error is a proxy and includes recognizer mistakes. It is not audible distortion, MOS, pronunciation or speaker similarity.",
+    "Stochastic sampling can diverge after small numerical changes even with the same random seed.",
+    "No human listening scores or original PyTorch reference comparison.",
+    "Timings are a single sequential run under current machine load; the first clip includes cold kernel costs.",
+    "The tested FP16-weight runner retains FP32 transformer context and KV cache; it is not an optimized fully FP16 execution path."
+  ]
+}

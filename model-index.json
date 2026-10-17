@@ -1,0 +1,27 @@
+{
+  "oQ8": {
+    "path": "models/oQ8",
+    "bytes": 1264128643,
+    "sha256": "5731ee775d31c61802eae6d72feec1131344653272d538f41ff5f1a158997c7b"
+  },
+  "FP16T3": {
+    "path": "models/FP16T3",
+    "bytes": 1639136135,
+    "sha256": "e96620aa846ecfa8f3ecdd3ed3f0a41db358d137115110b05a2e7bdf1326c725"
+  },
+  "FP32": {
+    "path": "models/FP32",
+    "bytes": 2711115367,
+    "sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554"
+  },
+  "oQ6": {
+    "path": "models/oQ6",
+    "bytes": 1138299337,
+    "sha256": "85ebe09693d7faf89bfd3437a2fbf4cd6ebebff30fcb65f6b977d88f36a7eb69"
+  },
+  "oQ5": {
+    "path": "models/oQ5",
+    "bytes": 1079972255,
+    "sha256": "bea499ebc253ce9cc56a17d8f8bded6f9531bcf128ce333b80420fdb5ce3f78e"
+  }
+}

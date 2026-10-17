@@ -1,0 +1,12 @@
+{
+  "t3_stored_weight_dtype": "mlx.core.float16",
+  "context_dtype": "mlx.core.float32",
+  "context_shape": [
+    2,
+    92,
+    1024
+  ],
+  "policy": "Observation of the existing FP16-weight runner. No dtype casts or runtime optimization applied.",
+  "first_layer_k_cache_dtype": "mlx.core.float32",
+  "first_layer_v_cache_dtype": "mlx.core.float32"
+}

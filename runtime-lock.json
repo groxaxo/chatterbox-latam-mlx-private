@@ -1,0 +1,19 @@
+{
+  "mlx_audio_commit": "dad2087f790dfe96b07d5aac1405db4b578b411f",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-audio": "0.5.9",
+    "numpy": "2.5.4",
+    "safetensors": "0.8.0",
+    "huggingface-hub": "2.2.0",
+    "soundfile": "0.14.0"
+  },
+  "module_sha256": {
+    "mlx_audio.tts.models.chatterbox.chatterbox": "3b5f2cf6c422aa8e1e291e62fea86ab10ba4cb0ae78771f7741de056e7c775ee",
+    "mlx_audio.tts.models.chatterbox.config": "feedd4123bf61814ccc0bd0e1583b2c409ce7c17bf6f50e6dfbc8866c9c8d54e",
+    "mlx_audio.tts.models.chatterbox.tokenizer": "d8bf94ce7919264176a6bdaa6e8610f0bd396283ab5f670421d5a727ded45afb",
+    "mlx_audio.tts.models.chatterbox.t3.t3": "79e82bf5b98422252198ee204a9f4a55c4d65726a73ce5fdd0d99df46df9281e",
+    "mlx_audio.tts.models.chatterbox.s3gen.hifigan": "8d99c3e2e0f68b020a92c5e789e891c4f4ae7513fa54155c9bd84f5af6f8132e",
+    "mlx_audio.tts.models.chatterbox.s3gen.s3gen": "447d22074d026c9f6f1ea19f5c1fccbf037802b715c4fbb70ce251de853afbd4"
+  }
+}

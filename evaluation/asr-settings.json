@@ -1,0 +1,17 @@
+{
+  "model": "Systran/faster-whisper-medium@08e178d48790749d25932bbc082711ddcfdfbc4f",
+  "model_sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+  "recognizer": "Whisper-medium multilingual",
+  "faster_whisper": "1.2.1",
+  "ctranslate2": "4.8.3",
+  "device": "cpu",
+  "compute_type": "int8",
+  "beam_size": 5,
+  "language": "es",
+  "temperature": 0,
+  "condition_on_previous_text": false,
+  "vad_filter": false,
+  "normalization": "NFC, casefold, punctuation ignored, accents retained; numbers are written as words in the corpus",
+  "audio_resampling": "soundfile float32 decode; scipy polyphase 24000 to 16000 Hz",
+  "limits": "ASR errors include recognizer mistakes; no human pronunciation, speaker similarity or MOS rating."
+}

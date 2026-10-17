@@ -1,0 +1,222 @@
+{
+  "source_assets": [
+    {
+      "role": "t3",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "t3_es_mx_latam.safetensors",
+      "bytes": 2143990280,
+      "sha256": "c66c4517f11c2b35a56e28615c0689deb864cbc411e329552223bbd0a6a063f8"
+    },
+    {
+      "role": "s3gen",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "s3gen_v3.safetensors",
+      "bytes": 1056381804,
+      "sha256": "4a46190f3dccc2230fbb3488a930bccc925862ee68f2662433dfcfe93ce6c2cb"
+    },
+    {
+      "role": "text_tokenizer",
+      "repository": "ResembleAI/Chatterbox-Multilingual-es-mx-latam",
+      "revision": "27e595bf2fe7be0533ca299d9afafcde08b7cca7",
+      "filename": "grapheme_mtl_merged_expanded_v1.json",
+      "bytes": 69989,
+      "sha256": "69632f47220a788a52ce2661d096453c5655e9bf25289d89a8d832c46ee07dbf"
+    },
+    {
+      "role": "ve",
+      "repository": "ResembleAI/chatterbox",
+      "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+      "filename": "ve.safetensors",
+      "bytes": 5695784,
+      "sha256": "f0921cab452fa278bc25cd23ffd59d36f816d7dc5181dd1bef9751a7fb61f63c"
+    },
+    {
+      "role": "cangjie",
+      "repository": "ResembleAI/chatterbox",
+      "revision": "5bb1f6ee58e50c3b8d408bc82a6d3740c2db6e18",
+      "filename": "Cangjie5_TC.json",
+      "bytes": 1920163,
+      "sha256": "7073fd9de919443ae88e0bd2449917a65fe54898a4413ed1edcc4b67f28bce8c"
+    },
+    {
+      "role": "s3tok_weights",
+      "repository": "mlx-community/S3TokenizerV2",
+      "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+      "filename": "model.safetensors",
+      "bytes": 494868984,
+      "sha256": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc"
+    },
+    {
+      "role": "s3tok_config",
+      "repository": "mlx-community/S3TokenizerV2",
+      "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+      "filename": "config.json",
+      "bytes": 126,
+      "sha256": "8591fcc0eaae8c2bbfc69cf9d439933ecdf2d58cb9be63d00ce88736c4f2aa9d"
+    }
+  ],
+  "checks": {
+    "ve": {
+      "checkpoint_tensors": 13,
+      "allowed_runtime_only_missing": [],
+      "constructor_shape_adjustments": [],
+      "source_tensors": 16,
+      "omitted_external_tokenizer_keys": [],
+      "stored_dtype_counts": {
+        "mlx.core.float32": 13
+      }
+    },
+    "t3": {
+      "checkpoint_tensors": 292,
+      "allowed_runtime_only_missing": [
+        "tfmr.lm_head.weight"
+      ],
+      "constructor_shape_adjustments": [
+        {
+          "tensor": "tfmr.model.embed_tokens.weight",
+          "constructor_shape": [
+            4000,
+            1024
+          ],
+          "source_shape": [
+            8,
+            1024
+          ],
+          "reason": "Unused wrapper embedding; all T3 forwards supply input_embeddings; source values preserved exactly."
+        }
+      ],
+      "source_tensors": 292,
+      "omitted_external_tokenizer_keys": [],
+      "stored_dtype_counts": {
+        "mlx.core.float32": 292
+      }
+    },
+    "s3gen": {
+      "checkpoint_tensors": 2182,
+      "allowed_runtime_only_missing": [
+        "flow.decoder.rand_noise",
+        "flow.encoder.embed.pos_enc.pe",
+        "flow.encoder.up_embed.pos_enc.pe",
+        "mel2wav.stft_window",
+        "trim_fade"
+      ],
+      "constructor_shape_adjustments": [],
+      "source_tensors": 2386,
+      "omitted_external_tokenizer_keys": [
+        "tokenizer.encoder.blocks.0.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.0.attn.key.weight",
+        "tokenizer.encoder.blocks.0.attn.out.bias",
+        "tokenizer.encoder.blocks.0.attn.out.weight",
+        "tokenizer.encoder.blocks.0.attn.query.bias",
+        "tokenizer.encoder.blocks.0.attn.query.weight",
+        "tokenizer.encoder.blocks.0.attn.value.bias",
+        "tokenizer.encoder.blocks.0.attn.value.weight",
+        "tokenizer.encoder.blocks.0.attn_ln.bias",
+        "tokenizer.encoder.blocks.0.attn_ln.weight",
+        "tokenizer.encoder.blocks.0.mlp.0.bias",
+        "tokenizer.encoder.blocks.0.mlp.0.weight",
+        "tokenizer.encoder.blocks.0.mlp.2.bias",
+        "tokenizer.encoder.blocks.0.mlp.2.weight",
+        "tokenizer.encoder.blocks.0.mlp_ln.bias",
+        "tokenizer.encoder.blocks.0.mlp_ln.weight",
+        "tokenizer.encoder.blocks.1.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.1.attn.key.weight",
+        "tokenizer.encoder.blocks.1.attn.out.bias",
+        "tokenizer.encoder.blocks.1.attn.out.weight",
+        "tokenizer.encoder.blocks.1.attn.query.bias",
+        "tokenizer.encoder.blocks.1.attn.query.weight",
+        "tokenizer.encoder.blocks.1.attn.value.bias",
+        "tokenizer.encoder.blocks.1.attn.value.weight",
+        "tokenizer.encoder.blocks.1.attn_ln.bias",
+        "tokenizer.encoder.blocks.1.attn_ln.weight",
+        "tokenizer.encoder.blocks.1.mlp.0.bias",
+        "tokenizer.encoder.blocks.1.mlp.0.weight",
+        "tokenizer.encoder.blocks.1.mlp.2.bias",
+        "tokenizer.encoder.blocks.1.mlp.2.weight",
+        "tokenizer.encoder.blocks.1.mlp_ln.bias",
+        "tokenizer.encoder.blocks.1.mlp_ln.weight",
+        "tokenizer.encoder.blocks.2.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.2.attn.key.weight",
+        "tokenizer.encoder.blocks.2.attn.out.bias",
+        "tokenizer.encoder.blocks.2.attn.out.weight",
+        "tokenizer.encoder.blocks.2.attn.query.bias",
+        "tokenizer.encoder.blocks.2.attn.query.weight",
+        "tokenizer.encoder.blocks.2.attn.value.bias",
+        "tokenizer.encoder.blocks.2.attn.value.weight",
+        "tokenizer.encoder.blocks.2.attn_ln.bias",
+        "tokenizer.encoder.blocks.2.attn_ln.weight",
+        "tokenizer.encoder.blocks.2.mlp.0.bias",
+        "tokenizer.encoder.blocks.2.mlp.0.weight",
+        "tokenizer.encoder.blocks.2.mlp.2.bias",
+        "tokenizer.encoder.blocks.2.mlp.2.weight",
+        "tokenizer.encoder.blocks.2.mlp_ln.bias",
+        "tokenizer.encoder.blocks.2.mlp_ln.weight",
+        "tokenizer.encoder.blocks.3.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.3.attn.key.weight",
+        "tokenizer.encoder.blocks.3.attn.out.bias",
+        "tokenizer.encoder.blocks.3.attn.out.weight",
+        "tokenizer.encoder.blocks.3.attn.query.bias",
+        "tokenizer.encoder.blocks.3.attn.query.weight",
+        "tokenizer.encoder.blocks.3.attn.value.bias",
+        "tokenizer.encoder.blocks.3.attn.value.weight",
+        "tokenizer.encoder.blocks.3.attn_ln.bias",
+        "tokenizer.encoder.blocks.3.attn_ln.weight",
+        "tokenizer.encoder.blocks.3.mlp.0.bias",
+        "tokenizer.encoder.blocks.3.mlp.0.weight",
+        "tokenizer.encoder.blocks.3.mlp.2.bias",
+        "tokenizer.encoder.blocks.3.mlp.2.weight",
+        "tokenizer.encoder.blocks.3.mlp_ln.bias",
+        "tokenizer.encoder.blocks.3.mlp_ln.weight",
+        "tokenizer.encoder.blocks.4.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.4.attn.key.weight",
+        "tokenizer.encoder.blocks.4.attn.out.bias",
+        "tokenizer.encoder.blocks.4.attn.out.weight",
+        "tokenizer.encoder.blocks.4.attn.query.bias",
+        "tokenizer.encoder.blocks.4.attn.query.weight",
+        "tokenizer.encoder.blocks.4.attn.value.bias",
+        "tokenizer.encoder.blocks.4.attn.value.weight",
+        "tokenizer.encoder.blocks.4.attn_ln.bias",
+        "tokenizer.encoder.blocks.4.attn_ln.weight",
+        "tokenizer.encoder.blocks.4.mlp.0.bias",
+        "tokenizer.encoder.blocks.4.mlp.0.weight",
+        "tokenizer.encoder.blocks.4.mlp.2.bias",
+        "tokenizer.encoder.blocks.4.mlp.2.weight",
+        "tokenizer.encoder.blocks.4.mlp_ln.bias",
+        "tokenizer.encoder.blocks.4.mlp_ln.weight",
+        "tokenizer.encoder.blocks.5.attn.fsmn_block.weight",
+        "tokenizer.encoder.blocks.5.attn.key.weight",
+        "tokenizer.encoder.blocks.5.attn.out.bias",
+        "tokenizer.encoder.blocks.5.attn.out.weight",
+        "tokenizer.encoder.blocks.5.attn.query.bias",
+        "tokenizer.encoder.blocks.5.attn.query.weight",
+        "tokenizer.encoder.blocks.5.attn.value.bias",
+        "tokenizer.encoder.blocks.5.attn.value.weight",
+        "tokenizer.encoder.blocks.5.attn_ln.bias",
+        "tokenizer.encoder.blocks.5.attn_ln.weight",
+        "tokenizer.encoder.blocks.5.mlp.0.bias",
+        "tokenizer.encoder.blocks.5.mlp.0.weight",
+        "tokenizer.encoder.blocks.5.mlp.2.bias",
+        "tokenizer.encoder.blocks.5.mlp.2.weight",
+        "tokenizer.encoder.blocks.5.mlp_ln.bias",
+        "tokenizer.encoder.blocks.5.mlp_ln.weight",
+        "tokenizer.encoder.conv1.bias",
+        "tokenizer.encoder.conv1.weight",
+        "tokenizer.encoder.conv2.bias",
+        "tokenizer.encoder.conv2.weight",
+        "tokenizer.quantizer._codebook.project_down.bias",
+        "tokenizer.quantizer._codebook.project_down.weight"
+      ],
+      "stored_dtype_counts": {
+        "mlx.core.float32": 2182
+      }
+    }
+  },
+  "weights": {
+    "bytes": 2711115367,
+    "sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+    "tensors": 2487,
+    "exact_serialization_roundtrip": true
+  }
+}

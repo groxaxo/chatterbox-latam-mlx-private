@@ -1,0 +1,11 @@
+{
+  "variant": "FP32",
+  "load_seconds": 1.2881172919951496,
+  "model_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+  "weight_bytes": 2711115367,
+  "loaded_t3_dtypes": {
+    "mlx.core.float32": 293
+  },
+  "decoder_all_fp32": true,
+  "reference_seconds": 10.296
+}

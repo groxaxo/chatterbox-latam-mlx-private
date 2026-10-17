@@ -1,0 +1,17 @@
+/.venv/
+/.cache/
+**/__pycache__/
+*.pyc
+/models/*/model.safetensors
+/speech-tokenizer/model.safetensors
+/outputs/
+*.wav
+*.flac
+*.mp3
+*.opus
+*.tar
+*.tar.gz
+*.tar.zst
+.DS_Store
+.env
+.env.*

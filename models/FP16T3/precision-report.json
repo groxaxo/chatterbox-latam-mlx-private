@@ -1,0 +1,18 @@
+{
+  "source_path": "models/FP32",
+  "source_sha256": "1eca36b6e11bd796ed91a7f476644c420307c9ad1a39b05b7d6a16dd9118c554",
+  "output_path": "models/FP16T3",
+  "weights_sha256": "e96620aa846ecfa8f3ecdd3ed3f0a41db358d137115110b05a2e7bdf1326c725",
+  "weight_bytes": 1639136135,
+  "policy": "All stored t3.* tensors cast FP32 to FP16; all other tensors exactly preserved FP32",
+  "source_tensors": 2487,
+  "t3_fp16_tensors": 292,
+  "non_t3_fp32_tensors": 2195,
+  "dtype_counts": {
+    "mlx.core.float32": 2195,
+    "mlx.core.float16": 292
+  },
+  "all_finite": true,
+  "exact_expected_roundtrip": true,
+  "runtime_fix_required": "Use the existing corrected final-vocoder activation runner"
+}

@@ -1,0 +1,6 @@
+mlx==0.32.4
+mlx-audio @ git+https://github.com/Blaizzy/mlx-audio.git@dad2087f790dfe96b07d5aac1405db4b578b411f
+numpy==2.5.4
+safetensors==0.8.0
+huggingface-hub==2.2.0
+soundfile==0.14.0

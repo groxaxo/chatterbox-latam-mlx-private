@@ -1,0 +1,122 @@
+[
+  {
+    "id": "01-accents",
+    "text": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?"
+  },
+  {
+    "id": "02-latam",
+    "text": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo."
+  },
+  {
+    "id": "03-longer",
+    "text": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues."
+  },
+  {
+    "id": "04-names",
+    "text": "María, José, Lucía y Andrés se reunieron en Guadalajara para celebrar el cumpleaños de Sofía."
+  },
+  {
+    "id": "05-enye",
+    "text": "El pequeño soñó con una montaña nevada. Al despertar, buscó su muñeco y se puso un pañuelo."
+  },
+  {
+    "id": "06-dieresis",
+    "text": "El pingüino nadaba cerca de la orilla. La vergüenza desapareció cuando todos empezaron a cantar."
+  },
+  {
+    "id": "07-accent-meaning",
+    "text": "Sí, quiero un café para mí. Mi hermana dijo que él llegará el sábado por la mañana."
+  },
+  {
+    "id": "08-questions",
+    "text": "¿Dónde dejaste las llaves? ¿Cuánto falta para llegar? ¿Podemos detenernos un momento para descansar?"
+  },
+  {
+    "id": "09-excitement",
+    "text": "¡Qué alegría verte! No puedo creer que hayas venido. Pasa, siéntate y cuéntame cómo te fue."
+  },
+  {
+    "id": "10-instructions",
+    "text": "Primero abre la puerta. Después enciende la luz y deja la mochila junto a la mesa."
+  },
+  {
+    "id": "11-money-words",
+    "text": "La cuenta es de doscientos treinta y cinco pesos. Si pagas en efectivo, te devuelvo quince pesos."
+  },
+  {
+    "id": "12-time-words",
+    "text": "La cita es el martes a las nueve y media de la mañana. Por favor, llega diez minutos antes."
+  },
+  {
+    "id": "13-date-words",
+    "text": "El paquete llegará el veintitrés de noviembre. La oficina estará abierta hasta las seis de la tarde."
+  },
+  {
+    "id": "14-address",
+    "text": "Nos vemos en la avenida Reforma, frente a la librería. La entrada está junto a la farmacia."
+  },
+  {
+    "id": "15-directions",
+    "text": "Sigue derecho dos cuadras, gira a la izquierda y cruza el puente. El mercado está del lado derecho."
+  },
+  {
+    "id": "16-food",
+    "text": "Quisiera una quesadilla con champiñones, una sopa de tortilla y un vaso de agua sin hielo."
+  },
+  {
+    "id": "17-cooking",
+    "text": "Agrega la cebolla y el ajo. Cocina a fuego lento, mezcla con cuidado y prueba la salsa antes de servir."
+  },
+  {
+    "id": "18-weather",
+    "text": "Esta tarde podría llover en Monterrey. Lleva un paraguas y una chamarra por si baja la temperatura."
+  },
+  {
+    "id": "19-travel",
+    "text": "El vuelo sale de Bogotá y hace escala en Lima. Recuerda llevar tu pasaporte y revisar la puerta de embarque."
+  },
+  {
+    "id": "20-work",
+    "text": "Terminamos la primera parte del proyecto. Mañana revisaremos los cambios y enviaremos el informe antes del mediodía."
+  },
+  {
+    "id": "21-shopping",
+    "text": "Necesitamos comprar arroz, frijoles, tomates, leche y pan. Revisa también si queda jabón en el baño."
+  },
+  {
+    "id": "22-dialogue",
+    "text": "Ella preguntó: ¿ya estás listo? Él respondió: dame un minuto, todavía estoy buscando mis zapatos."
+  },
+  {
+    "id": "23-reassurance",
+    "text": "Tranquila, vamos paso a paso. Respira despacio y dime qué necesitas. Tenemos tiempo para resolverlo."
+  },
+  {
+    "id": "24-story",
+    "text": "Al caer la noche, una luz apareció entre los árboles. Ana se acercó despacio y descubrió una pequeña casa."
+  },
+  {
+    "id": "25-rhythm",
+    "text": "Poco a poco, la plaza se llenó de gente. Unos bailaban, otros conversaban y los niños corrían alrededor de la fuente."
+  },
+  {
+    "id": "26-negative",
+    "text": "No cierres la ventana todavía. No hace frío y quiero escuchar la lluvia mientras preparo el desayuno."
+  },
+  {
+    "id": "27-contrast",
+    "text": "Aunque el camino era largo, decidimos continuar. Habíamos salido temprano y aún quedaban varias horas de luz."
+  },
+  {
+    "id": "28-technology",
+    "text": "Guarda una copia del documento antes de cerrar la aplicación. Después revisa que el archivo se haya guardado correctamente."
+  },
+  {
+    "id": "29-reminder",
+    "text": "Acuérdate de llamar a tu abuela el domingo. Quedamos en visitarla después de comer y llevarle unas flores."
+  },
+  {
+    "id": "30-ending",
+    "text": "Gracias por acompañarnos durante el recorrido. Esperamos que hayas disfrutado la visita y que regreses pronto con tu familia."
+  }
+]

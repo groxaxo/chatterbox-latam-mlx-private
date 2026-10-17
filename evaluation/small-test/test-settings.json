@@ -1,0 +1,27 @@
+{
+  "reference": "REFERENCE_NOT_INCLUDED",
+  "reference_sha256": "ab1fbf6bd3394330b6b3d5eda886e4fdcb266735f718acfd484029c26588f89f",
+  "seed": 42,
+  "temperature": 0.8,
+  "exaggeration": 0.5,
+  "cfg_weight": 0.5,
+  "repetition_penalty": 1.2,
+  "min_p": 0.05,
+  "top_p": 1.0,
+  "max_new_tokens": 1200,
+  "runtime_fix": "Final vocoder activation slope 0.01, matching official V3 source",
+  "corpus": [
+    {
+      "id": "01-accents",
+      "text": "¡Hola, Vlad! El niño vio un pingüino y sonrió. ¿Cómo estás?"
+    },
+    {
+      "id": "02-latam",
+      "text": "¿Qué onda? Hoy hace un clima padrísimo. Vamos por unos tacos y un agua de horchata después del trabajo."
+    },
+    {
+      "id": "03-longer",
+      "text": "Mañana iremos a la Ciudad de México para visitar a María y José. Después tomaremos un café y caminaremos por el centro. Por favor, avísame cuando llegues."
+    }
+  ]
+}

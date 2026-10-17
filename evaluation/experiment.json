@@ -1,0 +1,43 @@
+{
+  "corpus_sha256": "b2893904f141eb99ceffd1462005a50192d75e5663a7da3b12121fdfe0e7eaa0",
+  "reference_path": "REFERENCE_NOT_INCLUDED",
+  "reference_sha256": "ab1fbf6bd3394330b6b3d5eda886e4fdcb266735f718acfd484029c26588f89f",
+  "settings": {
+    "seed_values": [
+      42,
+      43,
+      44
+    ],
+    "temperature": 0.8,
+    "exaggeration": 0.5,
+    "cfg_weight": 0.5,
+    "repetition_penalty": 1.2,
+    "min_p": 0.05,
+    "top_p": 1.0,
+    "max_new_tokens": 1200,
+    "stream": false,
+    "lang_code": "es"
+  },
+  "constructor_seed": 20261017,
+  "variants": [
+    "FP32",
+    "FP16T3",
+    "oQ8"
+  ],
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-audio": "0.5.9",
+    "numpy": "2.5.4",
+    "soundfile": "0.14.0",
+    "huggingface-hub": "2.2.0"
+  },
+  "runtime_fix_sha256": "82b8f4fa56dde6d5476075e61c3572bfabf8d5f673f4b2fbd0f8fe3d174861d0",
+  "speech_tokenizer_lock": {
+    "repository": "mlx-community/S3TokenizerV2",
+    "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+    "sha256": {
+      "model.safetensors": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc",
+      "config.json": "8591fcc0eaae8c2bbfc69cf9d439933ecdf2d58cb9be63d00ce88736c4f2aa9d"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "variant": "FP32",
+    "weight_gb": 2.711115367,
+    "pooled_rtf": 1.0540597969612138,
+    "peak_mlx_gb": 4.768256389,
+    "signal_passes": 3,
+    "max_decoder_limit_fraction": 0.0,
+    "asr_cases": 3,
+    "pooled_asr_wer": 0.017543859649122806
+  },
+  {
+    "variant": "oQ8",
+    "weight_gb": 1.264128643,
+    "pooled_rtf": 0.6604532715854697,
+    "peak_mlx_gb": 3.300783457,
+    "signal_passes": 3,
+    "max_decoder_limit_fraction": 0.0,
+    "asr_cases": 3,
+    "pooled_asr_wer": 0.07017543859649122
+  },
+  {
+    "variant": "oQ6",
+    "weight_gb": 1.138299337,
+    "pooled_rtf": 0.6283641733511529,
+    "peak_mlx_gb": 3.195392805,
+    "signal_passes": 3,
+    "max_decoder_limit_fraction": 0.0,
+    "asr_cases": 3,
+    "pooled_asr_wer": 0.05263157894736842
+  },
+  {
+    "variant": "oQ5",
+    "weight_gb": 1.079972255,
+    "pooled_rtf": 0.609930514169616,
+    "peak_mlx_gb": 3.162787412,
+    "signal_passes": 3,
+    "max_decoder_limit_fraction": 0.0,
+    "asr_cases": 3,
+    "pooled_asr_wer": 0.07017543859649122
+  }
+]

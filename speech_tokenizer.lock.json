@@ -1,0 +1,8 @@
+{
+  "repository": "mlx-community/S3TokenizerV2",
+  "revision": "e0c9886f0e1c35ae85b1f27277416fb19fc72bec",
+  "sha256": {
+    "model.safetensors": "928726bc1f206a613d36b8f49e297eae9c5593a21bf9b92ddfe2c23f85eb92cc",
+    "config.json": "8591fcc0eaae8c2bbfc69cf9d439933ecdf2d58cb9be63d00ce88736c4f2aa9d"
+  }
+}
